@@ -20,7 +20,7 @@ b-page start
 .b-page {
 	background: #272822;
 	color: #f8f8f2;
-	font: 1.2em/1.5 sans-serif;
+	font: 1.3em/1.5 sans-serif;
 	padding: 0;
 	margin: 0;
 	height: 100%;
@@ -57,7 +57,7 @@ b-page start
 		background: #49483e;
 		width: 100%;
 		padding: 10px 20px;
-		outline: 1px dotted #464741;
+		outline: 2px dotted #464741;
 		font-size: 1.5em;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
@@ -113,10 +113,15 @@ b-link start
 	}
 
 	.b-link__notamedia:hover {
+		color: #5cd9b1;
 		background-image: -webkit-linear-gradient(left, #106aa6, #a4c474);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		text-shadow: none;
+	}
+
+	.b-link__youtube {
+		white-space: nowrap;
 	}
 
 	.b-link__youtube:before {
