@@ -40,9 +40,9 @@ b-page start
 		-o-transition: width .2s;
 		transition: width .2s;
 	}
-	
+
 	@media only screen 
-		and (max-width : 500px) {
+		and (max-width : 800px) {
 
 		.b-page_wrp {
 			width: 100%;
@@ -59,6 +59,8 @@ b-page start
 		padding: 10px 20px;
 		outline: 1px dotted #464741;
 		font-size: 1.5em;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 
 	.b-page_header {
