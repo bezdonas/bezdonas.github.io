@@ -1,0 +1,74 @@
+html, body
+	height 100%
+
+.body_wrp
+	position relative
+	background bodyBg
+	min-width wrapperWidth
+	min-height 100%
+	overflow hidden
+
+// Body Mods
+
+.__home-about,
+.__home-start,
+.__home-plan,
+.__mainpage
+	background-repeat no-repeat
+	background-position center top
+	background-size auto 100%
+// в min-aspect-ratio нужно писать соотношение ширины на высоту картинки дома на фоне
+@media (min-aspect-ratio: 8/5)
+	.__home-about,
+	.__home-start,
+	.__home-plan,
+	.__mainpage
+		background-size 100% auto
+
+.__home-about
+	& .body_wrp
+		background rgba(250,250,250,.95)
+
+.__home-start
+	& .body_wrp
+		background none
+
+	& .footer ._after,
+	& .footer ._after a
+		color white
+
+	& .footer ._after
+		transition background baseTrans
+		border-radius 5px
+		
+		&:hover
+			background mainpageOpaque
+
+	& .footer ._after a:hover
+		text-decoration none
+
+.__home-plan
+	& .body_wrp
+		background linkGreen
+		background rgba(21,57,39,.95)
+
+	& .footer ._after
+		color black
+
+	& .home-navigation a
+		color white
+	& .home-navigation a:hover,
+	& .home-navigation .__active a
+		color linkColor
+
+
+	& .content
+		color white
+	& .content a
+		color white
+		text-decoration none
+	& .content a:hover
+		color linkColor
+	
+	& .home-navigation
+		margin-bottom 70px
