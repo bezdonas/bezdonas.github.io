@@ -1,0 +1,27 @@
+.footer
+	height footerHeight
+	position absolute
+	bottom 0
+	left 0
+	right 0
+
+	& ._after
+		wrapper(wrapperWidth)
+		clearfix()
+		margin 15px auto
+		font italic 12px/24px Georgia
+
+	& ._copyright
+		float left
+
+	& ._created
+		float right
+
+
+	// Mods
+	&.__fixed
+		position fixed
+		opacity .9
+
+		&:hover
+			opacity: 1

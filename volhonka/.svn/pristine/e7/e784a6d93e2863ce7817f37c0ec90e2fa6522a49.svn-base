@@ -1,0 +1,42 @@
+.tabs
+	& ul
+		padding-left 0
+
+	& li
+		ib()
+	
+	& a
+		display block
+		position relative
+		padding 9px 15px
+		text-decoration none
+		font 700 italic 14px/1.5 fAgora
+
+	& .__active a
+		background linkColor
+		color black
+		cursor default
+		pointer-events none
+
+	& .__active a:after
+		content ''
+		position absolute
+		bottom -4px
+		left 50%
+		margin-left -4px
+		width 8px
+		height 8px
+
+		background linkColor
+		transform rotate(45deg)
+
+	& .__active a:hover
+		color black
+
+	// Mods
+	&.__photo-gallery, &.__wide-padding
+		text-align center
+
+		& a
+			padding-left 25px
+			padding-right 25px
