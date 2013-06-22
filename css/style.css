@@ -36,11 +36,11 @@ b-page start
 		width: 50%;
 		min-height: 100%;
 		position: relative;
-<<<<<<< HEAD
 		-webkit-transition: width .2s;
 		-o-transition: width .2s;
 		transition: width .2s;
 	}
+	
 	@media only screen 
 		and (max-width : 500px) {
 
@@ -48,8 +48,6 @@ b-page start
 			width: 100%;
 		}
 
-=======
->>>>>>> e8677a38832e20e55a1d2aa47bc822779cfd144b
 	}
 
 	.b-page_header,
