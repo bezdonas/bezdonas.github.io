@@ -112,73 +112,64 @@ b-link start
 	.b-link__notamedia.hover {
 		color: #5cd9b1;
 	}
-	.b-link__notamedia:hover .b-link__notamedia_1,
-	.b-link__notamedia.hover .b-link__notamedia_1 {
-		color: #208fc0;
+	.b-link__notamedia_1, 
+	.b-link__notamedia_2, 
+	.b-link__notamedia_3, 
+	.b-link__notamedia_4, 
+	.b-link__notamedia_5, 
+	.b-link__notamedia_6, 
+	.b-link__notamedia_7, 
+	.b-link__notamedia_8, 
+	.b-link__notamedia_9 {
 		-webkit-transition: color .2s;
 		-o-transition: color .2s;
 		transition: color .2s;
+	}
+	.b-link__notamedia:hover .b-link__notamedia_1,
+	.b-link__notamedia.hover .b-link__notamedia_1 {
+		color: #208fc0;
 	}
 	.b-link__notamedia:hover .b-link__notamedia_2,
 	.b-link__notamedia.hover .b-link__notamedia_2 {
 		color: #23a0cf;
-		-webkit-transition: color .2s;
-		-o-transition: color .2s;
-		transition: color .2s;
 	}
 	.b-link__notamedia:hover .b-link__notamedia_3,
 	.b-link__notamedia.hover .b-link__notamedia_3 {
 		color: #23a2cd;
-		-webkit-transition: color .2s;
-		-o-transition: color .2s;
-		transition: color .2s;
 	}
 	.b-link__notamedia:hover .b-link__notamedia_4,
 	.b-link__notamedia.hover .b-link__notamedia_4 {
 		color: #1fa0b8;
-		-webkit-transition: color .2s;
-		-o-transition: color .2s;
-		transition: color .2s;
 	}
 	.b-link__notamedia:hover .b-link__notamedia_5,
 	.b-link__notamedia.hover .b-link__notamedia_5 {
 		color: #0b9a87;
-		-webkit-transition: color .2s;
-		-o-transition: color .2s;
-		transition: color .2s;
 	}
 	.b-link__notamedia:hover .b-link__notamedia_6,
 	.b-link__notamedia.hover .b-link__notamedia_6 {
 		color: #1da06b;
-		-webkit-transition: color .2s;
-		-o-transition: color .2s;
-		transition: color .2s;
 	}
 	.b-link__notamedia:hover .b-link__notamedia_7,
 	.b-link__notamedia.hover .b-link__notamedia_7 {
 		color: #65b443;
-		-webkit-transition: color .2s;
-		-o-transition: color .2s;
-		transition: color .2s;
 	}
 	.b-link__notamedia:hover .b-link__notamedia_8,
 	.b-link__notamedia.hover .b-link__notamedia_8 {
 		color: #8abf46;
-		-webkit-transition: color .2s;
-		-o-transition: color .2s;
-		transition: color .2s;
 	}
 	.b-link__notamedia:hover .b-link__notamedia_9,
 	.b-link__notamedia.hover .b-link__notamedia_9 {
 		color: #9cc360;
-		-webkit-transition: color .2s;
-		-o-transition: color .2s;
-		transition: color .2s;
 	}
 
 	.b-link__stylus:hover,
 	.b-link__stylus.hover {
 		color: #606060;
+	}
+	.b-link__stylus_yl {
+		-webkit-transition: color .2s;
+		-o-transition: color .2s;
+		transition: color .2s;
 	}
 	.b-link__stylus:hover .b-link__stylus_yl,
 	.b-link__stylus.hover .b-link__stylus_yl {
