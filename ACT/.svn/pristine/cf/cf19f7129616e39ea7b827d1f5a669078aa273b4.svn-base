@@ -1,0 +1,156 @@
+(function($) {
+
+	// Функции
+
+	$.fn.cleanWS = function(options){
+		this.each(function(){
+			var container = this, nodes = container.childNodes;
+			var i = nodes.length-1;
+			while (i>-1) { if (nodes[i].nodeType == 3) container.removeChild(nodes[i]); 
+				i--;
+			}
+		});
+	}
+
+	function organizeMap(options){
+
+		var map, pm, z, c,
+			par = $('#js-map'),
+			wrp = $('#js-map_wrp', par),
+			cont = $('#js-map_cont', par),
+			tabs = $('#js-map_tabs', par),
+			enlarge = $('#js-map_enlarge', par),
+			reduce = $('#js-map_reduce', par),
+			down = $('#js-map_down', par),
+			up = $('#js-map_up', par),
+			left = $('#js-map_left', par),
+			right = $('#js-map_right', par);
+
+		ymaps.ready(function() {
+			mapInit($('.__active', tabs).data('map'));
+			tabsInit();
+		});
+
+		function mapInit(options){
+
+			cont
+				.html('')
+				.height($('body').width()/2);
+
+			map = new ymaps.Map ('js-map_cont', {
+				center: options.center,
+				zoom: options.zoom
+			});
+
+			map.behaviors.enable('multiTouch');
+
+			pm = new ymaps.Placemark(options.center, {}, {
+				iconImageHref: '/bitrix/templates/.default/markup/mobile/i/pm.png',
+				iconImageSize: [68, 62],
+				iconImageOffset: [-14, -42]
+			});
+
+			map.geoObjects.add(pm);
+
+			checkForDisabled();
+
+			enlarge.off('click.map');
+			enlarge.on('click.map', function() {
+				z = map.getZoom();
+				if (z < 17) {
+					map.setZoom(z + 1);
+				}
+				checkForDisabled();
+			});
+
+			reduce.off('click.map');
+			reduce.on('click.map', function() {
+				z = map.getZoom();
+				if (z >= 1) {
+					map.setZoom(z - 1);
+				}
+				checkForDisabled();
+			});
+
+			down.off('click.map');
+			down.on('click.map', function() {
+				c = map.getCenter();
+				map.setCenter([c[0] - 0.0003, c[1]])
+			});
+
+			up.off('click.map');
+			up.on('click.map', function() {
+				c = map.getCenter();
+				map.setCenter([c[0] + 0.0003,c[1]])
+			});
+
+			left.off('click.map');
+			left.on('click.map', function() {
+				c = map.getCenter();
+				map.setCenter([c[0],c[1] - 0.0005])
+			});
+
+			right.off('click.map');
+			right.on('click.map', function() {
+				c = map.getCenter();
+				map.setCenter([c[0],c[1] + 0.0005])
+			});
+
+			function checkForDisabled() {
+				z = map.getZoom();
+				if (z === 1) {
+					reduce.addClass('__disabled');
+					enlarge.removeClass('__disabled');
+				} else if (z > 1 && z < 17) {
+					reduce.removeClass('__disabled');
+					enlarge.removeClass('__disabled');
+				} else if (z === 17) {
+					reduce.removeClass('__disabled');
+					enlarge.addClass('__disabled');
+				}
+			}
+
+		}
+
+		function tabsInit() {
+
+			var itm = $('.tabs_i', tabs),
+				lnk = $('.tabs_lnk', tabs);
+
+			itm.on('click', function() {
+
+				var el = $(this);
+
+				if(el.hasClass('__active')) {
+					return false;
+				}
+				itm.removeClass('__active');
+				el.addClass('__active');
+				mapInit(el.data('map'));
+
+				return false;
+
+			});
+
+		}
+	}
+
+	// /Функции
+
+
+
+
+	// Вызовы
+	// (DOM-ready не нужен -- скрипт и так находится в конце боди)
+
+	// Желательно минимизировать хтмл в одну строчку, и не использовать эту функцию
+	$('.js-cleanWS').cleanWS();
+
+	// Все, связанное с яндекс-картой тут
+	if ($('#js-map').length > 0) {
+		organizeMap();
+	}
+
+	// /Вызовы
+
+})(jQuery);

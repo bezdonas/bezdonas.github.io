@@ -1,0 +1,50 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js ie" lang="ru"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>ACT страховой брокер</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="target-densitydpi=160dpi, maximum-scale=2, initial-scale=.75, user-scalable=yes">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<script src="js/libs/modernizr-2.6.1.min.js"></script>
+	<script src="js/libs/jquery-1.9.1.min.js"></script>
+	<script src="js/libs/jquery-ui-1.10.0.custom.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body class="p404">
+	<div class="header">
+		<header>
+
+			<div class="wrapper">
+			        <div class="logo"><img src="./i/logo404.png" width="120" height="60" alt="ACT страховой брокер" /></div><!-- /.logo -->
+			</div><!-- /.wrapper -->
+
+		</header>
+	</div><!-- /.header -->
+
+	<div class="main" role="main">
+		<section class="content">
+			<div class="wrapper error404 narrow"><!-- .narrow сжирает по 10px справа и слева -->
+				<h1>Ошибка <span>404</span></h1>
+				<p>Неправильно набран адрес, или такой страницы больше не существует.</p>
+
+				<p>Вернитесь  <a href="/">на главную</a>, или воспользуйтесь <a href="#">картой сайта</a>.</p>
+
+			</div><!-- /.wrapper -->
+		</section><!-- /.content -->
+	</div> <!-- /.main -->
+
+</body>
+</html>
