@@ -1,0 +1,430 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Кавказская политика</title>
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="header">
+		<header class="wrapper">
+
+			<div class="header-topline clearfix">
+				<div class="header-topline_left">
+					<div class="logo">
+						<!-- На внутренних ссылку следует раскомментировать -->
+						<!-- <a href="/"> -->
+							<img src="i/logo.png" alt="" width="150" height="48">
+						<!-- </a> -->
+					</div>
+					<div class="today">
+						<span class="today_day">31</span> <span class="today_month">августа</span>
+					</div>
+				</div><!-- /.header-topline_left -->
+				<div class="header-topline_right">
+					<div class="agemark" title="16+"></div>
+					<form class="search">
+						<input type="text" class="search_text" placeholder="Поиск" name="search">
+						<input type="submit" class="search_submit" value="">
+					</form>
+					<a href="#" class="sign-in">
+						Вход и регистрация
+					</a>
+				</div><!-- /.header-topline_right -->
+			</div><!-- /.header-topline -->
+
+			<nav class="header-nav">
+				<ul>
+					<li><a href="#">Элиты</a></li>
+					<li><a href="#">Экономика</a></li>
+					<li><a href="#">Межнациональное</a></li>
+					<li><a href="#">Общество</a></li>
+					<li><a href="#">Правозащита</a></li>
+					<li><a href="#">Религия</a></li>
+					<li><a href="#">Геополитика</a></li>
+					<li><a href="#">Государство</a></li>
+					<li><a href="#">Культура</a></li>
+					<li><a href="#">Блоги</a></li>
+					<li><a href="#">Видео</a></li>
+				</ul>
+			</nav><!-- /.header-nav -->
+
+		</header><!-- /.wrapper -->
+	</div><!-- /.header -->
+
+	<div class="content">
+		<div class="wrapper">
+			
+			<div class="inner">
+				<div class="inner-main-events">
+					<ul class="main-events">
+						<li>
+							<a href="#">Выборы мэра Москвы<sup>5</sup></a>
+						</li>
+						<li>
+							<a href="#">Скандалы<sup>7</sup></a>
+						</li>
+						<li>
+							<a href="#">Образование<sup>12</sup></a>
+						</li>
+						<li>
+							<a href="#">Армия<sup>81</sup></a>
+						</li>
+						<li>
+							<a href="#">Скандалы<sup>5</sup></a>
+						</li>
+						<li>
+							<a href="#">Война в Сирии<sup>45</sup></a>
+						</li>
+						<li>
+							<a href="#">Катастрофы<sup>89</sup></a>
+						</li>
+						<li>
+							<a href="#">Социальные сети<sup>45</sup></a>
+						</li>
+					</ul><!-- /.main-events -->
+				</div>
+
+
+				<aside class="inner_sidebar">
+
+					<header class="section-title">
+						<h2><a class="_blue" href="#">Блоги</a></h2>
+					</header><!-- /.section-title -->
+
+					<div class="anons-list _blogposts _inner">
+
+						<div class="anons">
+							<a class="author-name" href="#50">Рамиль Алиев</a>
+							<a href="#60" class="title">Почему? Потому что он мусульманин! (видео)</a>
+						</div>
+						<div class="anons">
+							<a href="#51" class="author-name">Рамзан Кадыров</a>
+							<a href="#61" class="title">Россия ведет себя логично по отношению к Грузии</a>
+						</div>
+						<div class="anons">
+							<a href="#52" class="author-name">Дмитрий Иванов</a>
+							<a href="#62" class="title">Путин про Грузию совсем забыл</a>
+						</div>
+						<div class="anons">
+							<a href="#53" class="author-name">usahlkaro</a>
+							<a href="#63" class="title">Это реальный фииш &mdash; конец всем надеждам Армении</a>
+						</div>
+						<div class="anons">
+							<a href="#54" class="author-name">Орхан Джемаль</a>
+							<a href="#64" class="title">Как мы посетили народный курорт Джилы-Су</a>
+						</div>
+						<div class="anons">
+							<a href="#55" class="author-name">barhano</a>
+							<a href="#65" class="title">Кавказские либералы?<br>Нет, не слышал...</a>
+						</div>
+						<div class="anons">
+							<a href="#56" class="author-name">Dagestan Businassman</a>
+							<a href="#66" class="title">Терроризм можно победить только объединившись</a>
+						</div>
+
+					</div><!-- /.anons-list -->
+
+					<a href="#" class="create-blog">
+						Создать блог
+					</a>
+
+					<div class="sidebox">
+							
+						<a href="http://twitter.com/kavpolit" class="twitter-link">@kavpolit</a>
+
+						<ul class="twitter-list">
+							<li>Ставрополье требует статуса русской республики <a href="#" class="_blue">http://kavpolit.com/stavropole-trebuet-statusa-russkoj-...</a></li>
+							<li>МВД Грузии уничтожило тайные записи личной жизни политиков и журналистов <a href="#" class="_blue">http://kavpolit.com/bez-kompromata/</a></li>
+							<li>МИД: применение силы в Сирии чревато отголосками на Кавказе <a href="#" class="_blue">http://kavpolit.com/mid-primenenie...</a></li>
+						</ul>
+
+					</div>
+
+					<div class="sidebox">
+						
+						<a href="http://instagram.com/kavpolit" class="instagram-link">kavpolit</a>
+
+						<ul class="instagram-gallery">
+							<li><a href="#"><img src="pic/80x80/1.jpg" alt="" width="80" height="80"></a></li>
+							<li><a href="#"><img src="pic/80x80/2.jpg" alt="" width="80" height="80"></a></li>
+							<li><a href="#"><img src="pic/80x80/3.jpg" alt="" width="80" height="80"></a></li>
+							<li><a href="#"><img src="pic/80x80/4.jpg" alt="" width="80" height="80"></a></li>
+						</ul>
+
+					</div>
+
+					<div class="sidebox">
+						
+						<div class="poll">
+							
+							<div class="question">
+								Строительный бизнес Махачкалы:<br>
+								есть ли шанс на спасение?
+							</div>
+
+							<div class="answers">
+								<a href="#">Да, конечно</a>
+								<a href="#">Сомневаюсь</a>
+								<a href="#">Не бывать такому</a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<a href="#" class="banner _mt20">
+						<img src="pic/banner/2.png" alt="" width="220" height="268">
+					</a>
+
+
+				</aside><!-- /.inner_sidebar -->
+
+				<div class="inner_main">
+
+					<div class="sub">
+						<span class="date">22 октября 2013, 22:45</span>
+						<span class="views">340</span>
+						<span class="comments">2</span>
+					</div>
+					<h1>Власти Кавказа против GTA5</h1>
+					<div class="text">
+						<img src="pic/pic_01.jpg" alt="" align="left">
+
+						<p class="author">
+										<a href="#53" class="author-pic-link">
+											<img src="pic/users/2.png" alt="usahlkaro" class="author-pic" width="30" height="30">
+										</a>
+										<a href="#53" class="author-name">Астраханский Евгений<span>Автор статьи</span></a>
+						</p>
+						<p>Глава президентской администрации Сергей Иванов выступил в субботу на пленарном заседании конференции Лондонского международного института «Глобальный стратегический обзор». Конференция открылась накануне в Стокгольме. Речь Иванова, как и можно было ожидать, была в основном посвящена Сирии. Иванов признался — он вообще не уверен, что арабские народы могут перенять европейскую модель демократии. «Быстро перейти к демократии европейского образца они не смогут. А может, и вовсе не смогут скопировать у себя такую модель», – заявил Иванов. По его словам, гармонии в современном мире  вряд ли можно добиться без уважения прав других народов и цивилизаций самостоятельно определять свою судьбу.</p>
+						<p>Иванов зато уверен, что «при урегулировании конфликтов надо исходить из стратегического, долгосрочного видения ситуации, а  не выстраивать свою позицию на основе </p>
+						<p>вмешательство в конфликт не прекращает, а лишь затягивает его. Приводит к все новым человеческим жертвам. Разве не об этом говорят примеры Ирака и Ливии?» Захват колоний, по его словам, долгое время тоже «маскировался благородными словами о «приобщении» «отсталых» народов к прогрессу и цивилизации». «Зачастую за этим демагогическим фасадом скрывались банальные коммерческие интересы», – подчеркнул представитель Кремля.</p>
+						<blockquote>За один день игра принесла издателю более 800 млн доларов, при предполагаемом аналитиками бюджете разработки в 266 млн. Похоже, через пару дней GTA V принесёт создателям первый миллиард.</blockquote>
+						<p>Кроме того, возникшая после «холодной войны» однополярная модель оказалась шаткой и очень быстро начала терять свой ресурс. Такова объективная реальность, и ее нельзя не замечать, – отметил Иванов. Обращаясь к сирийскому конфликту глава администрации президента заявил, что если по Сирии будет нанесен удар извне, оппозиция и вовсе потеряет всякий интерес к дальнейшим переговорам с Дамаском. Боевики посчитают, что «США будут, как и в Ливии, бомбить режим </p>
+						<div class="news-gallery">
+								<div class="prev"></div>
+								<div class="frame">
+									<div class="photo-container">
+											<img class="pic" src="pic/pic_02.jpg" alt="">
+											<img class="pic" src="pic/pic_02.jpg" alt="">
+											<img class="pic" src="pic/pic_02.jpg" alt="">
+											<img class="pic" src="pic/pic_02.jpg" alt="">
+											<img class="pic" src="pic/pic_02.jpg" alt="">
+											<img class="pic" src="pic/pic_02.jpg" alt="">
+									</div>
+								</div>
+								<div class="next"></div>
+							</div><!-- /.news-gallery -->
+						<p>Кроме того, возникшая после «холодной войны» однополярная модель оказалась шаткой и очень быстро начала терять свой ресурс. Такова объективная реальность, и ее нельзя не замечать, – отметил Иванов. Обращаясь к сирийскому конфликту глава администрации президента заявил, что если по Сирии будет нанесен удар извне, оппозиция и вовсе потеряет </p>
+						<p>
+							<span class="sociallink"><img src="pic/social.jpg" alt=""></span>
+							<span class="rate">
+									<a class="minus" href="#"></a>
+									<span class="raitnum">1340</span>										
+									<a class="plus" href="#"></a>
+							</span>					
+							<a href="#" class="ptint _blue">Распечатать</a>
+						</p>
+						<div class="tags"><a href="#">Абакар Абакаров</a>, <a href="#">Дагестан</a>, <a href="#">Денис Соколов</a>, <a href="#">Строительный бизнес</a></div>
+					</div>
+					<div class="commentBlock columns">
+						<div class="col section-title _w19">
+								<h2><a href="#"  class="_grey">комментарии</a></h2>
+								<a href="ajax/comment-loadall.html" class="all _grey loadmore"><span>Показать все</span>(7)</a>
+								<br/><a href="#" class="comlink _blue"><span>Оставить комметарий</span></a>
+						</div>
+						<div class="col _w70-5">
+								<div class="comment">
+									<a class="authorcom" href="#1">
+										<img src="pic/users/user1.jpg" alt="">
+										Ибрагимов Генадий
+									</a><!-- /.author -->
+									<span class="date">22 октября 2013, 17:08</span>
+									<p class="commtext">Обращаясь к сирийскому конфликту глава администрации президента заявил, что если по Сирии будет нанесен удар извне, оппозиция и вовсе потеряет всякий интерес к дальнейшим переговорам с Дамаском. Боевики посчитают, что «США будут, как и в Ливии, бомбить режим до основания и тем самым проложат боевикам легкий путь к победе», полагает Иванов. Он напомнил, что ранее Россия сумела заручиться согласием Дамаска направить представительную делегацию на Женевскую конференцию, тогда </p><!-- /.commtext -->
+									<div class="action">
+										<span class="rate">
+												<a class="minus" href="#"></a>
+												<span class="raitnum">1340</span>										
+												<a class="plus" href="#"></a>
+										</span>		
+										<a href="#" class="comlink _blue">Ответить</a>
+									</div>
+								</div><!-- /.comment -->
+								<div class="comment">
+									<a class="authorcom" href="#2">
+										<img src="pic/users/user2.jpg" alt="">
+										Ибрагимов Генадий
+									</a><!-- /.author -->
+									<span class="date">22 октября 2013, 17:08</span>
+									<p class="commtext">Обращаясь к сирийскому конфликту глава администрации президента заявил, что если по Сирии будет нанесен удар извне, оппозиция и вовсе потеряет всякий интерес к дальнейшим переговорам с Дамаском. Боевики посчитают, что «США будут, как и в Ливии, бомбить режим до основания и тем самым проложат боевикам легкий путь к победе», полагает Иванов. Он напомнил, что ранее Россия сумела заручиться согласием Дамаска направить представительную делегацию на Женевскую конференцию, тогда </p><!-- /.commtext -->
+									<div class="action">
+										<span class="rate">
+												<a class="minus" href="#"></a>
+												<span class="raitnum">1340</span>										
+												<a class="plus" href="#"></a>
+										</span>		
+										<a href="#" class="comlink _blue">Ответить</a>
+									</div>
+								</div><!-- /.comment -->
+						</div>
+						<form class="comForm" action="/" method="post">
+							<fieldset>
+								<h2>Оставить комментарий:</h2>
+								<textarea></textarea>
+								<input type="submit" class="button _blue-button" value="Отправить">
+							</fieldset>
+						</form><!-- /.line -->
+
+					</div>
+					<div class="material columns">
+						<div class="col section-title _w19">
+								<h2><a href="#"  class="_grey">материалы по&nbsp;теме</a></h2>
+								<a href="ajax/material-loadall.html" class="all _grey loadmore"><span>Показать все</span>(9)</a>
+						</div>
+						<div class="col _w70-5">
+								<div class="anons-list _simple">
+									<div class="anons special">
+										<a href="#131" class="piclink"><img src="pic/240x140/1.jpg" alt="" class="pic" width="240" height="140"></a>
+										<a href="#131" class="title">Цукерберг подключит к интернету пять миллиардов человек</a>
+									</div>
+								</div><!-- /.anons-list -->
+								<div class="anons-list _simple">
+									<div class="anons special">
+										<a href="#131" class="piclink"><img src="pic/240x140/2.jpg" alt="" class="pic" width="240" height="140"></a>
+										<a href="#131" class="title">Условный срок за халатность при наводнении в Крымске</a>
+									</div>
+								</div><!-- /.anons-list -->
+						
+								<div class="anons-list _simple">
+									<div class="anons special">
+										<a href="#131" class="piclink"><img src="pic/240x140/3.jpg" alt="" class="pic" width="240" height="140"></a>
+										<a href="#131" class="title">Мэр Миннеаполиса решил заработать на гей-свадьбах</a>
+									</div>
+								</div><!-- /.anons-list -->
+								
+						</div>
+					</div>
+					<div class="best columns">
+						<div class="col section-title _w19">
+								<h2><a href="#" class="_grey">лучшее по разделам</a></h2>
+								<a href="ajax/best-loadall.html" class="all _grey loadmore"><span>Показать все</span>(5)</a>
+						</div>
+						<div class="col _w70-5">
+							<div class="columns">
+								<div class="col _w49">
+									<header class="section-title _marked _mtb30p">
+										<h2><a href="#">Образование</a></h2>
+									</header>
+								
+									<div class="anons-list _simple">
+										
+										<div class="anons">
+											<a href="#011" class="title">Возобновлено расследование дела Павла Дурова</a>
+										</div>
+								
+										<div class="anons">
+											<a href="#012" class="piclink">
+												<img class="pic" src="pic/110x64/1.jpg" alt="" width="110" height="64">
+											</a>
+											<a href="#012" class="title">Последствия пожара на АПЛ «Томск» ликвидируют за 10 дней</a>
+										</div>
+								
+										<div class="anons">
+											<a href="#013" class="title">Издатель The New Times подарила журнал Евгении Альбац</a>
+										</div>
+								
+										<div class="anons">
+											<a href="#014" class="title">Lego стала вторым по величине производителем игрушек в мире</a>
+										</div>
+								
+									</div><!-- /.anons-list._simple -->
+								</div>
+								<div class="col _w49">
+								
+									<header class="section-title _marked _mtb30p">
+										<h2><a href="#">Межнациональные отношения</a></h2>
+									</header>
+								
+									<div class="anons-list _simple">
+										
+										<div class="anons">
+											<a href="#011" class="title">Возобновлено расследование дела Павла Дурова</a>
+										</div>
+								
+										<div class="anons">
+											<a href="#012" class="piclink">
+												<img class="pic" src="pic/110x64/1.jpg" alt="" width="110" height="64">
+											</a>
+											<a href="#012" class="title">Последствия пожара на АПЛ «Томск» ликвидируют за 10 дней</a>
+										</div>
+								
+										<div class="anons">
+											<a href="#013" class="title">Издатель The New Times подарила журнал Евгении Альбац</a>
+										</div>
+								
+										<div class="anons">
+											<a href="#014" class="title">Lego стала вторым по величине производителем игрушек в мире</a>
+										</div>
+								
+									</div><!-- /.anons-list._simple -->
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div><!-- /.inner_main -->
+				
+			</div>
+
+		</div><!-- /.wrapper -->
+	</div><!-- /.content -->
+
+	<div class="footer">
+		<footer class="wrapper">
+			<div class="footer_cnt clearfix">
+
+				<div class="footer_left">
+					<div class="contacts">
+						<div class="contacts_copy">&copy; 2013 КАВПОЛИТ <span>(Кавказская политика)</span></div>
+						<a href="mailto:info@kavpolit.com" class="contacts_email">info@kavpolit.com</a>
+						<div class="contacts_phone">+7 (499) 951-03-14</div>
+					</div>
+					<div class="social">
+						<a href="#" class="tw"></a>
+						<a href="#" class="fb"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="rss"></a>
+					</div>
+				</div><!-- /.footer_left -->
+
+				<div class="footer_right">
+					<div class="links">
+						<a href="#">О КП</a>
+						<a href="#">Реклама</a>
+						<a href="#">Обратная связь</a>
+					</div>
+					<div class="created-by">
+						Создание сайта &mdash; <a href="#">Notamedia</a>
+					</div>
+				</div><!-- /.footer_right -->
+
+			</div><!-- /.footer_cnt -->
+		</footer><!-- /.wrapper -->
+	</div><!-- /.footer -->
+
+	<script src="js/plugins.js"></script><!-- jQuery, modernizr and other plugins - evrth is here -->
+	<script src="js/script.js"></script><!-- Custom scripts in jquery plugins form -->
+</body>
+</html>

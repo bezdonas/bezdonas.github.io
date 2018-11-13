@@ -1,0 +1,41 @@
+
+<li>
+	<div class="photo">
+		<span class="photolabel">Политика</span>
+		<img src="pic/253x166/2.jpg" alt="">
+	</div>
+	<div class="newstext">
+		<span class="date">9 октября 2013, 12:35</span>
+		<h3><a href="#">«Патриоты» на районе</a></h3>
+		<p>ЦИК республики отменил 9 сентября итоги голосования на участке из-за поступивших заявлений о нарушениях в ходе голосования на его территории. Жаловались наблюдатель от регионального отделения «Единой России» и два члена участковой избирательной комиссии с правом совещательного голоса от «Единой России» и «Справедливой России». </p>
+		<div class="sub">
+			<span class="views">340</span>
+			<span class="comments">12</span>
+			<span class="rate">
+				<a href="#" class="minus"></a>
+				<span class="raitnum">1340</span>										
+				<a href="#" class="plus"></a>
+			</span>
+		</div>
+	</div>
+</li>
+<li>
+	<div class="photo">
+		<span class="photolabel">Политика</span>
+		<img src="pic/253x166/3.jpg" alt="">
+	</div>
+	<div class="newstext">
+		<span class="date">9 октября 2013, 12:35</span>
+		<h3><a href="#">«Патриоты» на районе</a></h3>
+		<p>ЦИК республики отменил 9 сентября итоги голосования на участке из-за поступивших заявлений о нарушениях в ходе голосования на его территории. Жаловались наблюдатель от регионального отделения «Единой России» и два члена участковой избирательной комиссии с правом совещательного голоса от «Единой России» и «Справедливой России». </p>
+		<div class="sub">
+			<span class="views">340</span>
+			<span class="comments">12</span>
+			<span class="rate">
+				<a href="#" class="minus"></a>
+				<span class="raitnum">1340</span>										
+				<a href="#" class="plus"></a>
+			</span>
+		</div>
+	</div>
+</li>

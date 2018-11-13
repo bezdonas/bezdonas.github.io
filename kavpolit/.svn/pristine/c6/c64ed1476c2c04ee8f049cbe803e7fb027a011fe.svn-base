@@ -1,0 +1,40 @@
+<div class="sign-up-form">
+
+	<div class="soc-enter">
+		<div class="soc-enter_label">Войти через соцсети:</div>
+		<div class="soc-links">
+			<a href="#" class="tw"></a>
+			<a href="#" class="fb"></a>
+			<a href="#" class="vk"></a>
+		</div>
+	</div>
+
+	<form action="">
+		<div class="form-wrapper">
+
+			<div class="row error">
+				<label for="reg_nick">Email или Nick</label>
+				<div class="field-wrapper">
+					<input id="reg_nick" type="text" class="field">
+				</div>
+				<div class="error">Поле заполнено неверно</div>
+			</div>
+			<div class="row">
+				<label for="reg_pass">Пароль</label>
+				<div class="field-wrapper">
+					<input id="reg_pass" type="password" class="field">
+				</div>
+				<div class="error"></div>
+			</div>
+
+			<div class="row">
+				<label for=""></label>
+				<div class="field-wrapper">
+					<input type="submit" class="button _blue-button" value="Войти">
+				</div>
+			</div>
+
+		</div>
+	</form>
+
+</div>
