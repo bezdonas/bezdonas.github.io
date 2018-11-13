@@ -1,0 +1,145 @@
+/* Author:
+
+*/
+var ltie9 = false;
+$(function() {
+	ltie9 = ($('html').hasClass('lt-ie9')) ? true : false;
+	$('img.circle').circleIMG(); // круглые картинки
+	$('.blogcarousel').blogcarousel();
+	$('.js-loadmore').loadMore(); //загрузить еще
+
+}); // DOM loaded
+
+$(window).load(function(){ });
+
+
+
+(function($) { //create closure
+$.fn.cleanWS = function(options){
+	this.each(function(){
+		var container = this, nodes = container.childNodes;
+		var i = nodes.length-1;
+		while (i>-1) { 
+			if (nodes[i].nodeType == 3) container.removeChild(nodes[i]);
+			i--;
+		}
+	});
+}
+//end of closure
+})(jQuery);
+
+(function($) { //create closure
+$.fn.heightAdjustment = function(options){
+	this.each(function(){
+		var H = 0, el = $(this).children();
+		el.height('').removeClass('evenlyready');
+		el.each(function(){
+			H = Math.max(H, $(this).height());
+		});
+		el.height(H).addClass('evenlyready');
+	});
+}
+//end of closure
+})(jQuery);
+
+
+(function($) { //create closure
+$.fn.circleIMG = function(options){
+// оборачивает выбранные картинки в span
+// для modern browser будет использоваться border-radius, для old ie - маска-картинка
+// маска описывается в style.css в классах cw_'+w+'x'+h+':
+	this.each(function(){
+		var img = $(this);
+		if (ltie9) {
+					$(window).load(function(){
+			img.wrap(function() {
+						var h = img.height(), w = img.width();
+						var cls = img.attr('class').replace('circle','');
+						img.css({'border-radius': h/2+'px'});
+						img.attr('class', 'circle');
+						return '<span class="circlewrapper cw_'+w+'x'+h+' '+cls+'"></span>';
+			}).after('<span class="mask"></span>');
+					});
+//				}
+		} else {
+			var h = img.height();
+			try {
+				if (!h || h<10) {
+					throw('Not all reqs was loaded..'); // не загрузились, кидаем исключение
+				} else {
+					img.css({'border-radius': h/2+'px'});
+				}
+			} catch(e) {
+				$(window).load(function(){
+					img.css({'border-radius': img.height()/2+'px'});
+				});
+			}
+		}
+	});
+}
+//end of closure
+})(jQuery);
+
+(function($) { //create closure
+$.fn.blogcarousel = function(options) {
+	this.each(function(){
+		var bc = $(this);
+		bc.children('ul').each(function(){
+			var ul = $(this), li = ul.children('li'), lil = li.length;
+			li.each(function(i){
+				$(this).find('.caption').append('<span class="stat">'+(i+1)+' / '+lil+'</stat>');
+			});
+		});
+		
+	});
+}
+//end of closure
+})(jQuery);
+
+
+(function($) {
+
+	$.fn.loadMore = function(options) {
+
+		return this.each(function() {
+			var cont = $(this),
+				o = $.extend({}, $.fn.loadMore.defaults, options, cont.data('loadMore')),
+				obj = o.obj,
+				par = o.par,
+				link = $('.more', cont);
+			
+			link
+				.off('click.loadMore')
+				.on('click.loadMore', cont, function(e) {
+					e.preventDefault();
+					var el = $(this),
+						url = el.attr('href');
+					el.addClass('wait');
+					$.ajax(url).always(function() {
+						el.removeClass('wait')
+					}).success(function(data) {
+						cont.find(o.obj).last().before(data);
+					}).fail(function() {
+
+					});
+				});
+
+		});
+
+	};
+
+	$.fn.loadMore.defaults = {
+		par: false,
+		obj: '.line'
+	};
+
+})(jQuery);
+
+
+
+
+
+
+
+
+

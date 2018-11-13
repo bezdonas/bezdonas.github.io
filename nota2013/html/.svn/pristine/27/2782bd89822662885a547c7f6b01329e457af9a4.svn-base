@@ -1,0 +1,467 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>NOTAMEDIA</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="target-densitydpi=160dpi, maximum-scale=2, initial-scale=.75, user-scalable=yes">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+	<script src="js/libs/jquery-1.10.2.min.js"></script>
+	<script src="js/libs/jquery-ui-1.10.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<!-- background is demo -->
+<body>
+	<div class="header darkheader opaque">
+		<header>
+		       <div class="logo">
+				<!-- <img src="./svg/logo_reliz.svg" alt /> -->
+				<!-- <embed src="./svg/logo_reliz.svg" type="image/svg+xml"></embed> -->
+				<object data="./svg/logo_reliz.svg" type="image/svg+xml"></object>
+				<!--[if lt IE 9]><img src="./i/logo_notamedia_giant_1.png" alt="" /><![endif]-->
+		        </div><!-- /.logo -->
+				<a href="http://notamedia.ru/" class="logo"></a>
+			<nav class="mainmenu">
+				<ul><li>
+					<a href="#">Компания</a>
+					</li><li>
+					<a href="#">Услуги</a>
+					</li><li>
+					<a href="#">Клиенты</a>
+					</li><li class="current item">
+					<a href="#">Портфолио</a>
+					</li><li><!-- .current = текущий раздел; .current + .item = статья, новость, запись блога и пр. внутри раздела -->
+					<a href="#">Блог</a>
+					</li><li>
+					<a href="#">Контакты</a>
+				</li></ul>
+			</nav>
+			<div class="soc">
+				<a href="#">&#228;</a>
+				<a href="#">&#229;</a>
+				<a href="#">&#240;</a>
+				<a href="#">&#0036;</a>   
+			</div>
+		</header>
+	</div><!-- /.header -->
+
+	<div class="inner" role="inner"><!-- id="" только для идентификаци страницы ""  -->
+
+		<section class="content">
+
+			<div class="work">
+		
+				<a href="#" class="pprev"></a>
+				<a href="#" class="pnext"></a>
+				
+				<div class="work_head" style="color:#ffffff;">
+					<img src="pic/portfolio/jlr/4.png" alt="" style="display:block; position:absolute; top:0; left:0; width:100%; height:492px;">
+					<div class="work_wrap">
+						<a class="work_back"  style="color:#ffffff;" href="#">Портфолио</a>
+						<div class="work_head-text">
+							<h1 class="work_title">Jaguar Land Rover</h1>
+							<div class="work_link">
+								<a href="http://cars.selected.jaguar.ru" target="_blank" style="color:#ffffff; display:block;"><img src="pic/portfolio/jlr/5.png" alt=""> cars.selected.jaguar.ru</a>
+								<a href="http://cars.selected.landrover.ru" target="_blank" style="color:#ffffff;  display:block;"><img src="pic/portfolio/jlr/6.png" alt=""> cars.selected.landrover.ru</a>
+							</div>
+							<div class="work_anons">Компания AXELOT работает на рынке информационных технологий с 1998 года. Основная область деятельности AXELOT — разработка и внедрение автоматизированных систем управления различными участками деятельности. Клиентами компании являются организации различных размеров, форм собственности и отраслевой принадлежности.</div>
+						</div>
+					</div><!-- /.work_wrap -->
+
+					<div class="work_side">
+					</div><!-- /.work_side -->
+
+				</div><!-- /.work_head -->
+
+				<div class="work_body" style="background:#edf2f8;">
+					<script type="text/javascript">
+						
+								(function($) {
+									$('.mainmenu .current a').css({'color':'#ffffff'});
+								})(jQuery);
+
+					</script>
+					<div class="work_screen lead_screen lentaWorks">
+							<div class="prev hide" title="Назад">Назад</div>
+							<div class="next" title="Вперед">Вперед</div>
+							<div class="shad">
+								<div class="t"></div>
+								<div class="lentaWrap" style="margin-left:12px; height: 757px;">
+									<div class="lenta">
+									<img alt="" src="pic/portfolio/jlr/8.png" style="margin: 0;">
+									<img alt="" src="pic/portfolio/jlr/10.png" style="margin: 0;">
+									</div>
+								</div>
+							</div>
+							<div class="b"><div></div></div>
+							<div class="preview lr">
+								<div class="cur lr"><span></span><img alt="" src="pic/portfolio/jlr/9.png"></div>
+								<div class="lr"><span></span><img alt="" src="pic/portfolio/jlr/11.png"></div>
+							</div>
+						<style>
+							.lentaWorks {
+								position: relative;
+								margin:0 auto;
+								width:940px;
+							}
+							.lentaWorks .lentaWrap {
+								height: 757px;
+								overflow: hidden;
+								position: relative;
+								width: 974px;
+							}
+							.lentaWorks .lenta {
+								left: 0;
+								position: absolute;
+								top: 0;
+							}
+							.lentaWorks .lenta img {
+								display: inline-block;
+								vertical-align:top;
+							}
+							.lentaWorks .preview {
+								margin: 30px 0 0 0;
+							}
+							.lentaWorks .preview.margo {
+								margin: 30px 0 0 0;
+							}
+							.lentaWorks .preview.lr {
+								margin: 30px 0 0 0;
+							}
+							.lentaWorks .preview div {
+								cursor: pointer;
+								display: inline-block;
+								vertical-align:top;
+								margin-right: 29px;
+								position: relative;
+							}
+							.lentaWorks .preview div img {
+								display: block;
+							}
+							.lentaWorks .preview div span {
+								border: 6px solid #CA1481;
+								display: none;
+								height: 82px;
+								left: 0;
+								position: absolute;
+								top: 0;
+								width: 75px;
+							}
+							.lentaWorks .preview div.margo span {
+								border: 6px solid #AA2128;
+								display: none;
+								height: 120px;
+								left: 0;
+								position: absolute;
+								top: 0;
+								width: 75px;
+							}
+							.lentaWorks .preview div.lr span {
+								border: 6px solid #92949B;
+								display: none;
+								height: 164px;
+								left: 0;
+								position: absolute;
+								top: 0;
+								width: 216px;
+							}
+							.lentaWorks .preview div.cur img {
+								opacity: 1;
+							}
+							.lentaWorks .preview div.cur span {
+								display: block;
+							}
+							.lentaWorks .prev, .lentaWorks .next {
+								cursor: pointer;
+								height: 34px;
+								overflow: hidden;
+								position: absolute;
+								text-indent: -999px;
+								top: 301px;
+								width: 34px;
+							}
+							.lentaWorks .prev {
+								background: url("pic/portfolio/jlr/arrowL.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+								left: -44px;
+							}
+							.lentaWorks .next {
+								background: url("pic/portfolio/jlr/arrowR.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+								right: -64px;
+							}
+						</style>
+						<script type="text/javascript">
+								/*
+								  FS Studio
+								*/
+								 
+
+								(function($) {
+
+
+								  var $block = $('div.lentaWorks');
+
+								  var $view = 1;
+								  var $next = $block.find('div.next');
+								  var $prev = $block.find('div.prev');
+
+								  var $lent = $block.find('div.lenta');
+
+								  var $blocksView    = $lent.find('img');
+								  var $blocksPreview = $block.find('div.preview > div');
+
+								  var cur = 1;
+								  var qty = $blocksPreview.length;
+
+
+								  $next.removeClass('hide');
+								  $prev.removeClass('hide');
+								  
+								  $blocksView.not(':eq(0)').fadeOut();
+								  $blocksView.css({ position: 'absolute', top: 0, left: 0 });
+								  $blocksPreview.css({cursor : 'pointer'});
+
+
+								  var t=$('.preview div span:first');
+								  var $prv = $('div.preview');
+								  var $frame = $('<span>').css({position:'absolute', left: 210, width: 216, height: 164,border:'6px solid #92949b', cursor:'pointer'});
+
+								  var start = 210;
+								  var d = 262;
+
+
+								  var curCss;
+								  var visitedCss;
+
+								  var isFsstudio;
+								  var isMascotte;
+
+
+								  if( $('div.screen.lentaWorks.mascotte').length == 1 ){ // bugaga
+									isMascotte = true;
+									isFsstudio = false;
+									
+									curCss = {opacity: .5};
+									visitedCss = {opacity: 1};
+
+								  } else {
+									isMascotte = false;
+									isFsstudio = true;
+
+									visitedCss = {opacity: 1};
+									curCss = {opacity: .5};
+									//$blocksPreview.eq(0).addClass('_visited').css( curCss );
+								  }
+
+								  if( ! $.browser.msie )
+									$frame.appendTo( $prv );
+
+								  $blocksPreview.eq(0).addClass('_visited').find('img').css( curCss );
+
+								  // Refresh view
+								  function RefreshView(){
+									$blocksView.not(':eq('+(cur-1)+')').fadeOut( 333 );
+									$blocksView.eq(cur-1).fadeIn( 333 );
+
+									$blocksPreview.eq(cur-1).siblings().removeClass('cur');
+									$blocksPreview.filter('._visited').find('img').css( visitedCss );
+
+									if( ! $.browser.msie ){
+									  $frame.stop().animate({left: start+d*(cur-1)}, 333, function(){
+										$blocksPreview.eq(cur-1).addClass('cur _visited').find('img').css( curCss );
+									  });
+									} else {
+									  $blocksPreview.eq(cur-1).addClass('cur _visited').find('img').css( curCss );
+									}
+								  }
+
+
+								  $blocksPreview.each(function(i){ $blocksPreview.eq(i).click( function(){
+									cur=i+1;
+									RefreshView();
+								  })
+								  });
+								  
+								  // next
+								  $next.click( function(ev){
+
+									cur++;
+
+									if( cur > qty )
+									  cur = 1;
+
+									RefreshView();
+								  });
+
+								  // prev
+								  $prev.click( function(ev){
+									
+									cur--;
+								  
+									if( cur < 1 )
+									  cur = qty;
+
+									RefreshView();
+
+								  });
+
+								})(jQuery);
+
+						</script>
+					</div>
+
+					<div class="work_wrap">
+
+						<div class="columns">
+							<div class="col w480">
+								<div class="work_comment fll">
+									<a class="author" href="#">
+										<img class="circle" src="./pic/pic_14.jpg" alt="Пыжова Анастасия" style="border-radius: 35px;">
+										Пыжова Анастасия
+									</a>
+									<div class="text">
+										<p>Сайт политика у нас в стране, как правило, достаточно грустное зрелище. Фотография персоны, снятая на мыльницу за большим лакированным столом, флаг где-то в хедере сайта, чтобы добавить патриотичности, и много плохо сверстанного текста, написанного явно не для читателей.</p>
+										<p>Я рад, что появилась возможность сделать сайт за рамками этого шаблона. Фактически это промо персоны, одностраничник, где все важное можно посмотреть, не кликая, а просто пользуясь скролом. </p>
+									</div>
+								</div>
+							</div>
+							<div class="col w440">
+								<div class="work_screen tleft">
+									<img alt="" src="pic/portfolio/jlr/2.png" width="460" height="528">
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="tcenter" style="margin-top:40px;">
+						<img src="pic/portfolio/jlr/3.png" alt="" width="974" height="1681">
+					</div>
+
+
+					<div class="work_wrap">
+						<div class="work_comment">
+							<a href="#" class="author">
+								<img alt="Пыжова Анастасия" src="./pic/pic_14.jpg" class="circle">
+								Пыжова Анастасия
+							</a>
+							<div class="text">
+								<p>Сайт политика у нас в стране, как правило, достаточно грустное зрелище. Фотография персоны, снятая на мыльницу за большим лакированным столом, флаг где-то в хедере сайта, чтобы добавить патриотичности, и много плохо сверстанного текста, написанного явно не для читателей.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tcenter" style="margin-top:40px; z-index:1; position:relative;">
+						<img src="pic/portfolio/jlr/1.png" alt="" width="974" height="1159">
+					</div>
+
+					<div class="tcenter" style="margin-top:-55px; position:relative;  background: url('pic/portfolio/jlr/7.jpg') no-repeat center bottom; height:692px; width:100%;">
+					</div>
+					<div class="work_soc">
+						<img src="pic/fake_soc.png" alt="" width="214" height="20">
+					</div>
+
+				</div><!-- /.work_body -->
+
+
+				<div class="work_details clearfix">
+
+					<div class="work_tags">
+						2013, Персональный сайт, Политика
+					</div>
+					
+					<div class="work_client-works">
+						<div class="title">Другие работы для ProMediaGroup:</div>
+						<ul>
+							<li>Разработка логотипа</li>
+							<li>Набор наклеек</li>
+							<li>Фирменный стиль</li>
+						</ul>
+					</div>
+
+				</div><!-- /.work_details -->
+
+				<div class="work_team">
+					<dl class="col">
+						<dd>Менеджмент:</dd>
+						<dt>
+							<ul>
+								<li>Дима Харченков</li>
+								<li>Влад Карицкий</li>
+								<li>Гурам Бердзенишвили</li>
+							</ul>
+						</dt>
+					</dl>
+					<dl class="col">
+						<dd>Арт-директор:</dd>
+						<dt>
+							<ul>
+								<li>Максим Павлов</li>
+							</ul>
+						</dt>
+					</dl>
+					<dl class="col">
+						<dd>Дизайн:</dd>
+						<dt>
+							<ul>
+								<li>Мария Колокова</li>
+								<li>Денис Шепелев</li>
+							</ul>
+						</dt>
+					</dl>
+					<dl class="col">
+						<dd>Фотограф:</dd>
+						<dt>
+							<ul>
+								<li>Георгий Ростомов</li>
+							</ul>
+						</dt>
+					</dl>
+					<dl class="col">
+						<dd>Верстка:</dd>
+						<dt>
+							<ul>
+								<li>Андрей Баранов</li>
+								<li>Алиев Рамиль</li>
+							</ul>
+						</dt>
+					</dl>
+					<dl class="col">
+						<dd>Разработка:</dd>
+						<dt>
+							<ul>
+								<li>Игорь Цупко</li>
+							</ul>
+						</dt>
+					</dl>
+				</div>
+
+			</div><!-- /.work -->
+
+		</section><!-- /.content -->
+
+
+	</div> <!-- /.inner -->
+
+	<div class="footer">
+		<footer>
+			<div class="copy">© 2004-2013 Notamedia</div><!-- /.copy -->
+			<div class="phone">+7 (495) 995-15-21</div><!-- /.phone -->
+			<div class="email"><a href="mailto:info@notamedia.ru">info@notamedia.ru</a></div><!-- /.email -->
+		</footer>
+		<div class="present"><div><a href="#">скачать презентацию компании<span>2.3 MB</span></a></div></div><!-- /.present -->
+	</div><!-- /.footer -->
+</body>
+</html>

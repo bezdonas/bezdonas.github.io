@@ -1,0 +1,153 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>NOTAMEDIA</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="target-densitydpi=160dpi, maximum-scale=2, initial-scale=.75, user-scalable=yes">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+	<script src="js/libs/jquery-1.10.2.min.js"></script>
+	<script src="js/libs/jquery-ui-1.10.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+	<div class="header darkheader">
+		<header>
+		       <div class="logo">
+				<!-- <img src="./svg/logo_reliz.svg" alt /> -->
+				<!-- <embed src="./svg/logo_reliz.svg" type="image/svg+xml"></embed> -->
+				<object data="./svg/logo_reliz.svg" type="image/svg+xml"></object>
+				<!--[if lt IE 9]><img src="./i/logo_notamedia_giant_1.png" alt="" /><![endif]-->
+		        </div><!-- /.logo -->
+			<nav class="mainmenu">
+				<ul><li>
+					<a href="#">Компания</a>
+					</li><li>
+					<a href="#">Услуги</a>
+					</li><li>
+					<a href="#">Клиенты</a>
+					</li><li class="current item">
+					<a href="#">Портфолио</a>
+					</li><li><!-- .current = текущий раздел; .current + .item = статья, новость, запись блога и пр. внутри раздела -->
+					<a href="#">Блог</a>
+					</li><li>
+					<a href="#">Контакты</a>
+				</li></ul>
+			</nav>
+			<div class="soc">
+				<a href="#">&#228;</a>
+				<a href="#">&#229;</a>
+				<a href="#">&#240;</a>
+				<a href="#">&#0036;</a>   
+			</div>
+		</header>
+		<nav class="innermenu">
+			<ul class="first-level">
+				<li>
+					<a href="#">Команда</a>
+				</li><!-- 
+			 --><li class="active">
+					<a href="#">Вакансии</a>
+				</li><!-- 
+			 --><li>
+					<a href="#">Награды</a>
+				</li><!-- 
+			--> <li>
+					<a href="#">Проекты</a>
+				</li>
+			</ul>
+		</nav>
+	</div><!-- /.header -->
+
+	<div class="inner" role="inner"><!-- id="" только для идентификаци страницы ""  -->
+
+		<section class="content">
+
+			<div class="extwrapper">
+				
+				<div class="title-line">
+					<h2>Вакансии</h2>
+				</div>
+
+				<ul class="vacancies">
+					<li>
+						<a href="/ajax/vacancy.html">
+							<h3>Front-end разработчик</h3>
+							<div class="note">
+								С радостью примем в команду усидчивого, ответственного и инициативного front-end разработчика. Фронт работ — крупный и долгосрочный проект. Умение писать без ошибок обязательно.
+							</div>
+						</a>
+					</li><!-- 
+здесь нет пробелов
+и видимых символов
+				 --><li class="urgent">
+						<a href="/ajax/vacancy.html">
+							<h3>Веб-аналитик</h3>
+							<div class="note">
+								Мы ищем веб-аналитика. Того самого, который умеет и любит анализировать посещаемость и управлять потоками пользователей на сайтах.
+							</div>
+						</a>
+					</li><!--
+здесь тоже				
+				--><li>
+						<a href="/ajax/vacancy.html">
+							<h3>Системный аналитик</h3>
+							<div class="note">
+								Мы ищем проектировщика сайтов и мобильных приложений. Того, кто умеет придумывать концепции wow-проектов, составлять качественную проектную документацию (технические задания) и рисовать структурные схемы страниц (wireframes).
+							</div>
+						</a>
+					</li><!-- 
+и					
+				 --><li>
+						<a href="/ajax/vacancy.html">
+							<h3>Ведущий <span class="nobr">битрикс-разработчик</span></h3>
+							<div class="note">
+								Ищем в команду разработчика, имеющего теплые отношения с 1С-Битрикс.
+							</div>
+						</a>
+					</li><!-- 
+				 --><li>
+						<a href="/ajax/vacancy.html">
+							<h3>Менеджер <span class="nobr">интернет-проектов</span></h3>
+							<div class="note">
+								Нам нужны лучшие  в мире менеджеры проектов. Интересные задачи и неограниченные возможности для обучения, совершенствования и роста.
+							</div>
+						</a>
+					</li><!-- 
+				 --><li class="empty">
+						 <div class="content">
+						 	Если вы не нашли то, что искали, напишите нам на <a href="#">hr@notamedia.ru</a>. Возможно, мы просто еще не знаем, что нам нужны именно вы.
+						 </div>
+					</li>
+				</ul>
+
+			</div>
+
+		</section><!-- /.content -->
+
+
+	</div> <!-- /.inner -->
+
+	<div class="footer">
+		<footer>
+			<div class="copy">© 2004-2013 Notamedia</div><!-- /.copy -->
+			<div class="phone">+7 (495) 995-15-21</div><!-- /.phone -->
+			<div class="email"><a href="mailto:info@notamedia.ru">info@notamedia.ru</a></div><!-- /.email -->
+		</footer>
+		<div class="present"><div><a href="#">скачать презентацию компании<span>2.3 MB</span></a></div></div><!-- /.present -->
+	</div><!-- /.footer -->
+</body>
+</html>

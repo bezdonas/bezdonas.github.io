@@ -1,0 +1,190 @@
+/* Author:
+
+*/
+$(function() {
+	$('.mainlocalnav a').each(function(){
+		var a = $(this), hoverlayer = $('.hoverstyle.'+a.data('rel')), bg = hoverlayer.find('.bg'), T = 1000;
+	        a.mouseenter(function(){
+			hoverlayer.addClass('hover');
+		}).mouseleave(function(){
+			hoverlayer.removeClass('hover');
+		});
+	});
+
+
+	$('.no-touch .screennav').cheburashka();
+	$('.casecarousel').casecarousel();
+	$('.mainspecial .aboutspec > ul').hoverexpand();
+
+}); // DOM loaded
+
+$(window).load(function(){
+});
+
+
+
+(function($) { //create closure
+$.fn.cleanWS = function(options){
+	this.each(function(){
+		var container = this, nodes = container.childNodes;
+		var i = nodes.length-1;
+		while (i>-1) { 
+			if (nodes[i].nodeType == 3) container.removeChild(nodes[i]);
+			i--;
+		}
+	});
+}
+//end of closure
+})(jQuery);
+
+(function($) { //create closure
+$.fn.heightAdjustment = function(options){
+	this.each(function(){
+		var H = 0, el = $(this).children();
+		el.height('').removeClass('evenlyready');
+		el.each(function(){
+			H = Math.max(H, $(this).height());
+		});
+		el.height(H).addClass('evenlyready');
+	});
+}
+//end of closure
+})(jQuery);
+
+(function($) { //create closure
+$.fn.cheburashka = function(options){
+	this.each(function(){
+		var cont = $(this), div = cont.children('div'), t;
+                div.each(function(){
+                	$(this).mouseenter(function(){ 
+                		window.clearTimeout(t);
+                		cont.addClass('hover'); 
+                	}).mouseleave(function(){ 
+                		t = window.setTimeout(function(){
+                			cont.removeClass('hover'); 
+               			}, 700);
+                	});
+                });
+	});
+}
+//end of closure
+})(jQuery);
+
+(function($) { //create closure
+$.fn.hoverexpand = function(options){ // раскрывашка содержимого пункта меню (в контейнере .hover у LI)
+// у UL в cont.data('hoverlayerclass') - класс для стилизации и выбора контейнеров
+	this.each(function(){
+		var cont = $(this), li = cont.children('li'), T=500, A = 'easeOutQuad', I;
+                li.each(function(){
+			var li = $(this), hov = li.find('.hover');
+			if (hov.length > 0) {
+				var exp = $('<div class="hoverlayer '+cont.data('hoverlayerclass')+'" />').appendTo('body');
+				exp.html(hov.html()); hov.remove();
+				var txt = exp.find('.txt');
+				li.mouseenter(function(){
+					var pos = li.offset();
+					exp.css({left: '-1000em',height:'100%'});
+					txt.css({top:'',bottom:''});
+					var postxt = txt.position();
+					txt.css({top:postxt.top,bottom:'auto'});
+					exp.css({left: pos.left,height:0, opacity: 0.5});
+					exp.stop().animate({height:'100%',opacity:1}, T, A, function(){
+					        closeEXP();
+						exp.addClass('hover');
+						$(document).bind('mouseover.expover',function(e){
+							if (!$(e.target).parents('.hoverlayer').hasClass(cont.data('hoverlayerclass'))) closeEXP();
+						});
+					})
+				});
+				exp.mouseleave(function(){
+					closeEXP();
+				});
+			}
+                });
+                function closeEXP(){
+			$('.'+cont.data('hoverlayerclass')+'.hover').stop().animate({height:0,opacity:0.5}, T/3, function(){
+				$(this).removeClass('hover');
+				$(document).unbind('mouseover.expover');
+			});
+                }
+	});
+}
+//end of closure
+})(jQuery);
+
+
+(function($) { //create closure
+$.fn.casecarousel = function(options){
+	this.each(function(){
+		var cont = $(this), LI = cont.children('li'), T = 500, A = 'easeOutQuad', Ai = 'linear', lock = false;
+		cont.wrap("<div class='ccwrapper'><div class='ccframe'></div></div>");
+		var frame = cont.parent('.ccframe'), wrapper = frame.parent('.ccwrapper'), 
+		imgcont = $('<div class="ccimgcont" />').appendTo(wrapper), img = $('<img src="" alt="" />').appendTo(imgcont);
+		var current = cont.find('.current'), currimg = current.find('img').attr('src');
+		img.attr('src',currimg);
+		var nav = $('<div class="ccnav" />').appendTo(wrapper), next = $('<div class="ccnext" />').appendTo(nav), prev = $('<div class="ccprev" />').appendTo(nav);
+
+		LI.click(function(){
+			var li = $(this);
+			if (li.hasClass('current') || lock==true) return false;
+			lock = true;
+			var curr = cont.find('.current'), i = li.index(), curri = curr.index(), oldimg = imgcont.children('img');
+			if (i > curri) {
+				var nxtimg = $('<img src="'+li.find('img').attr('src')+'" alt="" />').prependTo(imgcont);
+				nxtimg.height(0);
+				nxtimg.animate({height:imgcont.height()},T/1.25,Ai,function(){ oldimg.remove(); nxtimg.height(''); lock = false; });
+			} else {
+				var nxtimg = $('<img src="'+li.find('img').attr('src')+'" alt="" />').appendTo(imgcont);
+				nxtimg.height(imgcont.height());
+				oldimg.animate({height:0},T/1.25,Ai,function(){ oldimg.remove(); nxtimg.height(''); lock = false; });
+			}
+			if (i>0) {
+				var H = 0;
+				for (var k=0; k<i; k++) {
+					H+=cont.children('li:eq('+k+')').outerHeight(true);
+				}
+				var move = cont.children('li').slice(0,i);
+				cont.animate({'margin-top':'-'+H+'px'}, T, A, function(){
+					curr.removeClass('current');
+					move.appendTo(cont);
+					cont.css('margin-top',0);
+					lock = false;
+				});
+			}
+			li.addClass('current');
+		});
+		next.click(function(e){
+			if (lock == true) return false;
+			lock = true;
+			var curr = cont.find('.current'), h = curr.outerHeight(true), nxt = curr.next(), 
+			oldimg = imgcont.children('img'), nxtimg = $('<img src="'+nxt.find('img').attr('src')+'" alt="" />').prependTo(imgcont);
+			nxtimg.height(0);
+			nxt.addClass('current');
+			nxtimg.animate({height:imgcont.height()},T/1.25,Ai,function(){ oldimg.remove(); nxtimg.height(''); });
+			cont.animate({'margin-top':'-'+h+'px'}, T, A, function(){
+				curr.removeClass('current').appendTo(cont);
+				cont.css('margin-top',0);
+				lock = false;
+			});
+		});
+		prev.click(function(e){
+			if (lock == true) return false;
+			lock = true;
+			var curr = cont.find('.current'), nxt = $('li:last',cont), h = nxt.outerHeight(true), 
+			oldimg = imgcont.children('img'), nxtimg = $('<img src="'+nxt.find('img').attr('src')+'" alt="" />').appendTo(imgcont);
+			nxtimg.height(imgcont.height());
+			oldimg.animate({height:0},T/1.25,Ai,function(){ oldimg.remove(); nxtimg.height(''); lock = false; });
+			nxt.addClass('current');
+			nxt.prependTo(cont);
+			cont.css('margin-top','-'+h+'px');
+			cont.animate({'margin-top':0}, T, A, function(){
+				curr.removeClass('current');
+				lock = false;
+			});
+		});
+	});
+}
+//end of closure
+})(jQuery);
+
+

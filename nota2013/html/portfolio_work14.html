@@ -1,0 +1,636 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>NOTAMEDIA</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="target-densitydpi=160dpi, maximum-scale=2, initial-scale=.75, user-scalable=yes">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+	<script src="js/libs/jquery-1.10.2.min.js"></script>
+	<script src="js/libs/jquery-ui-1.10.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<!-- background is demo -->
+<body>
+	<div class="header darkheader opaque">
+		<header>
+		       <div class="logo">
+				<!-- <img src="./svg/logo_reliz.svg" alt /> -->
+				<!-- <embed src="./svg/logo_reliz.svg" type="image/svg+xml"></embed> -->
+				<object data="./svg/logo_reliz.svg" type="image/svg+xml"></object>
+				<!--[if lt IE 9]><img src="./i/logo_notamedia_giant_1.png" alt="" /><![endif]-->
+		        </div><!-- /.logo -->
+				<a href="http://notamedia.ru/" class="logo"></a>
+			<nav class="mainmenu">
+				<ul><li>
+					<a href="#">Компания</a>
+					</li><li>
+					<a href="#">Услуги</a>
+					</li><li>
+					<a href="#">Клиенты</a>
+					</li><li class="current item">
+					<a href="#">Портфолио</a>
+					</li><li><!-- .current = текущий раздел; .current + .item = статья, новость, запись блога и пр. внутри раздела -->
+					<a href="#">Блог</a>
+					</li><li>
+					<a href="#">Контакты</a>
+				</li></ul>
+			</nav>
+			<div class="soc">
+				<a href="#">&#228;</a>
+				<a href="#">&#229;</a>
+				<a href="#">&#240;</a>
+				<a href="#">&#0036;</a>   
+			</div>
+		</header>
+	</div><!-- /.header -->
+
+	<div class="inner" role="inner"><!-- id="" только для идентификаци страницы ""  -->
+
+		<section class="content">
+
+			<div class="work">
+		
+				<a href="#" class="pprev"></a>
+				<a href="#" class="pnext"></a>
+				
+				<div class="work_head" style="color:#ffffff;">
+						<img src="pic/portfolio/evraz/5.png" alt="" style="display:block; position:absolute; top:0; left:0; width:100%; height:492px;">
+					<div class="work_wrap">
+						<a class="work_back" href="#" style="color:#ffffff;">Портфолио</a>
+						<div class="work_head-text">
+							<h1 class="work_title">Евраз</h1>
+							<a href="http://www.evraz.ru" class="work_link" target="_blank" style="color:#ffffff;"><img src="pic/portfolio/evraz/6.png" alt=""> www.evraz.ru</a>
+							<div class="work_anons">Компания AXELOT работает на рынке информационных технологий с 1998 года. Основная область деятельности AXELOT — разработка и внедрение автоматизированных систем управления различными участками деятельности. Клиентами компании являются организации различных размеров, форм собственности и отраслевой принадлежности.</div>
+						</div>
+					</div><!-- /.work_wrap -->
+
+					<div class="work_side">
+					</div><!-- /.work_side -->
+
+				</div><!-- /.work_head -->
+
+				<div class="work_body" style="background:#f5f5f5 url('pic/portfolio/evraz/7.png')no-repeat center 260px;">
+				
+					<div class="work_screen lead_screen" >
+						<img src="pic/portfolio/evraz/4.png" alt="" width="940" height="869">	
+					</div>
+<div class="tcenter" style="position:relative; margin-top:60px; text-align:left;">
+<div class="mainheader"><!-- mainheader - только для главной, для слайдшоу -->
+<script>
+var slides = [];
+$(function() {
+//	$('.hslides').notaslideshow({slides:slides});
+$('.hslides').notaslideshow({slides:slides, size:0, animation:'resize'});
+}); // DOM loaded
+(function($) { //create closure
+$.fn.notaslideshow = function(options){
+var defaults = {
+slides: [],
+TT: 6000,
+T:600,
+size: 12,
+animation: 'move' // [move|opacity|resize]
+};
+var errors = 0; var msg='';
+var o = $.extend(defaults, options);
+o.locker = false;
+o.timer;
+o.root = $(this);
+o.root.each(function(){
+var rootcont = $(this);
+var nav = $('<div class="nav" />').appendTo(rootcont);
+for (var i=0; i<o.slides.length; i++) {
+var slide = $(o.slides[i].slide); if (i==0) slide.addClass('current');
+slide.data('slide',o.slides[i].slide);
+var imgcont = slide.find('.imgsblock');
+imgcont.html('');
+for (var k=0; k<o.slides[i].imgs.length; k++) {
+var img = o.slides[i].imgs[k];
+img.obj = new Image();
+img.obj.src = img.src;
+var imgobj = $(img.obj).appendTo(imgcont);
+imgobj.css({width: img.w, height: img.h, left: img.l, top: img.t});
+imgobj.data('w', img.w).data('h', img.h).data('l', img.l).data('t', img.t);
+}
+$('<a href="#" rel="'+o.slides[i].slide+'"'+((i==0)?' class="current"':'')+'>'+(i+1)+'</a>').appendTo(nav);
+nav.find('a').click(function(){
+window.clearTimeout(o.timer);
+if ($(this).hasClass('current') || o.locker) return false;
+o.locker = true;
+var next = $(this).attr('rel');
+toggleSlides(rootcont, next, slides);
+return false;
+});
+}
+o.timer = window.setTimeout(function(){
+window.clearTimeout(o.timer);
+var current = nav.find('.current');
+var next = current.next();
+if (next.length < 1) next = nav.find('a:eq(0)');
+next.click();
+}, o.TT);
+});
+function toggleSlides(rootcont, next, slides){
+var D = $(window).width(), T = o.T/*, size = 12, T = 600*/;
+var currslide = rootcont.find('.current');
+var nextslide = rootcont.find(next).addClass('next');
+nextslide.find('.textblock').css({opacity: 0});
+nextslide.find('img').each(function(i){
+var img = $(this);
+switch (o.animation) {
+case 'resize':
+img.css({width: 0, height: 0, left: img.data('l'), top: img.data('t') });
+break;
+case 'opacity':
+img.css({opacity: 0, width: img.data('w'), height: img.data('h'), left: img.data('l'), top: img.data('t') });
+break;
+default: img.css({width: 1, height: 1, left: img.data('l')-D});
+break;
+}
+//	img.css({width: 1, height: 1, left: img.data('l')-D});
+});
+var cimgcont = currslide.find('.imgsblock');
+cimgcont.find('img').each(function(i) {
+var img = $(this);
+window.setTimeout(function(){
+img.animate({width: img.data('w')-o.size, height: img.data('h')-o.size, left: img.data('l')+(o.size*.5), top: img.data('t')+(o.size*.5)}, T/3, function(){
+window.setTimeout(function(){
+var ani;
+switch (o.animation) {
+case 'resize':
+ani = {width: 0, height: 0, left:img.data('l')+img.data('w')/2, top: img.data('t')+img.data('w')/2};
+break;
+case 'opacity':
+ani = {opacity: 0, width: img.data('w'), height: img.data('h'), left: img.data('l'), top: img.data('t')};
+break;
+default: ani = {left:img.data('l')+D, width: 1, height: 1};
+break;
+}
+if (!ani || ani.length<1) return false;
+img.animate(ani, T, 'easeInQuint', function(){
+if (i == cimgcont.find('img').length-1) {
+currslide.removeClass('current');
+}
+});
+}, i*T/120);//5
+});
+},i*T/20);//30
+});
+$('.hslides .toright').click(function () {
+var nav = $('.nav');
+var current = nav.find('.current');
+var next = current.next();
+if (next.length < 1) next = nav.find('a:first-child');
+next.click();
+});
+$('.hslides .toleft').click(function () {
+var nav = $('.nav');
+var current = nav.find('.current');
+var prev = current.prev();
+if (prev.length < 1) prev = nav.find('a:last-child');
+prev.click();
+});
+window.setTimeout(function(){
+currslide.find('.textblock').animate({opacity: 0}, T*1.2);
+nextslide.find('.textblock').animate({opacity: 1}, T*1.2);
+},T);
+window.setTimeout(function(){
+var nimgcont = nextslide.find('.imgsblock');
+nimgcont.find('img').each(function(i) {
+var img = $(this);
+window.setTimeout(function(){
+var ani;
+switch (o.animation) {
+case 'resize':
+ani = {width: img.data('w'), height: img.data('h')};
+break;
+case 'opacity':
+ani = {opacity: 1, width: img.data('w'), height: img.data('h'), left: img.data('l'), top: img.data('t')};
+break;
+default: ani = {left:img.data('l')+(o.size*.5), width: img.data('w')-o.size, height: img.data('h')-o.size};
+break;
+}
+if (!ani || ani.length<1) return false;
+img.animate(ani, T, 'easeOutQuint', function(){
+window.setTimeout(function(){
+img.animate({width: img.data('w'), height: img.data('h'), left: img.data('l'), top: img.data('t')}, T/4, function(){
+if (i == nimgcont.find('img').length-1) {
+nextslide.removeClass('next').addClass('current');
+var nav = rootcont.find('.nav');
+nav.find('.current').removeClass('current');
+nav.find('a[rel="'+nextslide.data('slide')+'"]').addClass('current');
+o.timer = window.setTimeout(function(){
+window.clearTimeout(o.timer);
+var current = nav.find('.current');
+var next = current.next();
+if (next.length < 1) next = nav.find('a:eq(0)');
+next.click();
+}, o.TT);
+o.locker = false;
+}
+});
+}, i*T/200);//3
+});
+},i*T/12);//50
+});
+},T*2);
+}
+}
+//end of closure
+})(jQuery);
+</script>
+<style type="text/css">
+.mainheader {
+height: 455px;
+}
+/* слайдшоу */
+.hslides { height: 455px; width: 100%; overflow: hidden; position: absolute; top: 0; left: 0;
+z-index: 0; min-width: 980px;
+background: url("pic/portfolio/evraz/bgEv.jpg") no-repeat center 0;
+}
+.hslides .hslide { height: 455px; width: 100%; position: absolute; top: 0; left: 0; visibility: hidden;
+}
+.hslides div.current { z-index: 99;
+visibility: visible;
+}
+.hslides div.next { z-index: 100; visibility: visible;
+}
+.hslide .imgsblock { height: 455px; position: absolute; width: 980px; left: 50%; top: 0; margin-left: -490px; }
+.hslide .imgsblock img { position: absolute; }
+.hslide .imgsblock .tmp { position: absolute; width: 1300px; left: 50%; top: 0; margin-left: -650px; z-index: 0; }
+.hslide .textblock { padding: 100px 0 0 530px; margin: 0 auto; width: 300px; height: 142px; position: relative; }
+.hslide h2 { font: bold 26px/31px 'Helvetica', Helvetica, Arial, sans-serif; text-transform: uppercase; margin: 0 0 6px 0; }
+.hslide .d1 { font: 14px/18px 'Helvetica', Helvetica, Arial, sans-serif; text-transform: uppercase; width: 290px; margin: 0 0 25px 0; }
+.hslide .d2 { font: 10px/14px Arial, sans-serif; width: 290px; margin: 0 0 0 160px; position: absolute; bottom: 0; left: 50%; }
+.hslides .nav {display:block; left: 50%; bottom: 193px; position: absolute; margin-left: 154px; z-index: 999; }
+.hslides .nav a { display: block; width: 7px; height: 7px; background: #5f6b7b; border: solid 2px #5f6b7b; text-indent: -9999em; margin: 0 5px; outline: none; float: left; }
+.hslides .nav a.current { background: transparent; cursor: default; }
+.hslides .toleft, .hslides .toleft:link, .hslides .toleft:visited, .hslides .toright, .hslides .toright:link, .hslides .toright:visited {
+height: 24px;
+outline: medium none;
+position: absolute;
+top: 215px;
+width: 13px;
+z-index: 999; }
+.hslides .toleft {
+left: 50%;
+margin-left:-490px;
+}
+.hslides .toright {
+right: 50%;
+margin-right:-490px;
+}
+.hslides .toleft span {
+background-position: 0 0;
+}
+.hslides .toleft span, .hslides .toright span {
+background: url("pic/portfolio/evraz/arrowEv.png") no-repeat scroll -13px -25px;
+height: 24px;
+position: absolute;
+text-indent: -9999em;
+width: 100%;
+}
+.hslides .toleft span {
+background-position: 0 0;
+}
+.hslides .toleft:hover span, .hslides .toleft:active span {
+background-position: 0 -25px;
+}
+.hslides .toright:hover span, .hslides .toright:active span {
+background-position: -13px 0;
+}
+</style>
+<div class="hslides">
+<a href="javascript:void(0);" class="toleft"><span>&quot;</span></a>
+<a href="javascript:void(0);" class="toright"><span>&quot;</span></a>
+<div class="hslide slide1">
+<div class="imgsblock">
+<!-- <img src="pic/portfolio/evraz/hslides/1.jpg" width="1300" height="506" alt="" class="tmp" /> -->
+</div><!-- /.imgsblock -->
+<div class="textblock">
+<h2>Ответственный</h2>
+<p class="d1">Работодатель, объединяющий более 110 тысяч профессионалов</p>
+<p class="d2">Сотрудники ЕВРАЗа&nbsp;&mdash; неотъемлемая часть успеха<br>Компании. ЕВРАЗ привлекает лучшие кадры, заботится<br>об&nbsp;их&nbsp;развитии и&nbsp;поддерживает карьерный рост.</p>
+</div><!-- /.textblock -->
+<script type="text/javascript">
+slides.push({slide: '.slide1', imgs: [
+{src: 'pic/portfolio/evraz/hslides/slide1/r5_8.jpg', w:57, h:58, l:576, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide1/r5_7.jpg', w:57, h:58, l:518, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide1/r5_6.jpg', w:57, h:58, l:460, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide1/r3_6.jpg', w:116, h:117, l:460, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide1/r5_5.png', w:57, h:58, l:402, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide1/r4_4.jpg', w:57, h:58, l:402, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide1/r3_5.jpg', w:57, h:58, l:402, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide1/r5_4.jpg', w:57, h:117, l:344, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide1/r4_3.jpg', w:57, h:58, l:344, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide1/r3_4.jpg', w:57, h:58, l:344, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide1/r2_2.jpg', w:57, h:58, l:344, t:46},
+{src: 'pic/portfolio/evraz/hslides/slide1/r5_3.jpg', w:57, h:58, l:286, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide1/r4_2.png', w:57, h:58, l:286, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide1/r3_3.jpg', w:57, h:58, l:286, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide1/r2_1.jpg', w:57, h:58, l:286, t:46},
+{src: 'pic/portfolio/evraz/hslides/slide1/r5_2.jpg', w:57, h:58, l:227, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide1/r5_1.jpg', w:57, h:58, l:169, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide1/r3_2.jpg', w:116, h:117, l:169, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide1/r4_1.jpg', w:58, h:58, l:110, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide1/r3_1.jpg', w:58, h:58, l:110, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide1/r3_7.jpg', w:57, h:58, l:885, t:105}
+]});
+</script>
+</div><!-- /.hslide 1 -->
+<div class="hslide slide2">
+<div class="imgsblock">
+<!-- <img src="pic/portfolio/evraz/hslides/2.jpg" width="1300" height="506" alt="" /> -->
+</div><!-- /.imgsblock -->
+<div class="textblock">
+<h2>Эффективный</h2>
+<p class="d1">Производитель проката для инфраструктурных проектов по&nbsp;всему миру</p>
+<p class="d2">Наша сталь используется для строительства<br>железных дорог, мостов и&nbsp;трубопроводов,<br>жилых домов, офисных зданий и&nbsp;стадионов.</p>
+</div><!-- /.textblock -->
+<script type="text/javascript">
+slides.push({slide: '.slide2', imgs: [
+{src: 'pic/portfolio/evraz/hslides/slide2/r5_5.jpg', w:57, h:58, l:576, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide2/r5_4.jpg', w:57, h:58, l:518, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide2/r4_6.jpg', w:57, h:58, l:518, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide2/r3_7.jpg', w:57, h:58, l:518, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide2/r5_3.jpg', w:57, h:58, l:460, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide2/r4_5.jpg', w:57, h:58, l:460, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide2/r3_6.jpg', w:57, h:58, l:460, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide2/r2_2.jpg', w:57, h:58, l:460, t:46},
+{src: 'pic/portfolio/evraz/hslides/slide2/r3_5.jpg', w:57, h:58, l:401, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide2/r6_1.jpg', w:57, h:58, l:343, t:282},
+{src: 'pic/portfolio/evraz/hslides/slide2/r4_4.jpg', w:116, h:117, l:343, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide2/r3_4.png', w:57, h:58, l:343, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide2/r2_1.jpg', w:57, h:58, l:343, t:46},
+{src: 'pic/portfolio/evraz/hslides/slide2/r5_2.jpg', w:57, h:58, l:285, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide2/r4_3.jpg', w:57, h:58, l:285, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide2/r3_3.jpg', w:57, h:58, l:285, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide2/r5_1.png', w:57, h:58, l:227, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide2/r4_2.jpg', w:57, h:58, l:227, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide2/r3_2.jpg', w:57, h:58, l:227, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide2/r3_1.jpg', w:57, h:58, l:169, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide2/r4_1.jpg', w:116, h:116, l:110, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide2/r4_7.jpg', w:57, h:58, l:885, t:164}
+]});
+</script>
+</div><!-- /.hslide 2 -->
+<div class="hslide slide3">
+<div class="imgsblock">
+<!-- <img src="pic/portfolio/evraz/hslides/3.jpg" width="1300" height="506" alt="" /> -->
+</div><!-- /.imgsblock -->
+<div class="textblock">
+<h2>Международный</h2>
+<p class="d1">производитель стали, руды и&nbsp;угля, работающий на&nbsp;четырех континентах</p>
+<p class="d2">ЕВРАЗ&nbsp;&mdash; одна из&nbsp;крупнейших металлургических и<br>горнодобывающих компаний мира с&nbsp;активами в&nbsp;России,<br>Украине, США, Канаде, Чехии, Италии и&nbsp;ЮАР.</p>
+</div><!-- /.textblock -->
+<script type="text/javascript">
+slides.push({slide: '.slide3', imgs: [
+{src: 'pic/portfolio/evraz/hslides/slide3/r5_8.jpg', w:57, h:58, l:576, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide3/r5_7.jpg', w:57, h:58, l:518, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide3/r2_2.jpg', w:57, h:58, l:519, t:46},
+{src: 'pic/portfolio/evraz/hslides/slide3/r5_6.jpg', w:57, h:58, l:460, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide3/r3_5.jpg', w:116, h:117, l:460, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide3/r4_4.jpg', w:57, h:58, l:402, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide3/r3_4.png', w:57, h:58, l:402, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide3/r5_5.jpg', w:57, h:58, l:344, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide3/r6_1.jpg', w:57, h:58, l:344, t:282},
+{src: 'pic/portfolio/evraz/hslides/slide3/r4_3.jpg', w:57, h:58, l:344, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide3/r3_3.jpg', w:57, h:58, l:344, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide3/r5_4.png', w:57, h:58, l:286, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide3/r4_2.jpg', w:57, h:58, l:286, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide3/r3_2.jpg', w:57, h:58, l:286, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide3/r5_3.jpg', w:57, h:58, l:228, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide3/r5_2.jpg', w:57, h:58, l:169, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide3/r2_1.jpg', w:57, h:58, l:228, t:46},
+{src: 'pic/portfolio/evraz/hslides/slide3/r3_1.jpg', w:116, h:117, l:169, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide3/r4_1.jpg', w:58, h:58, l:110, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide3/r5_1.jpg', w:57, h:58, l:51, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide3/r3_6.jpg', w:57, h:58, l:885, t:105}
+]}); </script>
+</div><!-- /.hslide 3 -->
+<div class="hslide slide4">
+<div class="imgsblock">
+<!-- <img src="pic/portfolio/evraz/hslides/4.jpg" width="1300" height="506" alt="" /> -->
+</div><!-- /.imgsblock -->
+<div class="textblock">
+<h2>Глобальный</h2>
+<p class="d1">Производитель ванадия и&nbsp;ванадиевых продуктов</p>
+<p class="d2">ЕВРАЗ является одним из&nbsp;крупнейших производителей<br>ванадия в&nbsp;мире и&nbsp;единственным производителем<br>ванадийсодержащей железной руды в&nbsp;России.</p>
+</div><!-- /.textblock -->
+<script type="text/javascript">
+slides.push({slide: '.slide4', imgs: [
+{src: 'pic/portfolio/evraz/hslides/slide4/r5_7.jpg', w:57, h:58, l:519, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide4/r5_6.jpg', w:57, h:58, l:460, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide4/r4_4.jpg', w:57, h:58, l:519, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide4/r3_7.jpg', w:57, h:58, l:519, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide4/r5_5.png', w:57, h:58, l:402, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide4/r5_4.jpg', w:57, h:58, l:344, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide4/r3_6.jpg', w:116, h:117, l:402, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide4/r5_3.jpg', w:57, h:58, l:285, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide4/r6_1.jpg', w:57, h:58, l:344, t:282},
+{src: 'pic/portfolio/evraz/hslides/slide4/r4_3.png', w:57, h:58, l:344, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide4/r3_5.jpg', w:57, h:58, l:344, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide4/r4_2.jpg', w:116, h:117, l:227, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide4/r3_4.jpg', w:57, h:58, l:285, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide4/r3_3.jpg', w:57, h:58, l:227, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide4/r5_2.jpg', w:57, h:58, l:169, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide4/r4_1.jpg', w:57, h:58, l:169, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide4/r3_2.jpg', w:57, h:58, l:169, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide4/r2_1.jpg', w:57, h:58, l:169, t:46},
+{src: 'pic/portfolio/evraz/hslides/slide4/r3_1.jpg', w:58, h:58, l:110, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide4/r5_1.jpg', w:57, h:58, l:51, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide4/r3_8.jpg', w:57, h:58, l:885, t:105}
+]}); </script>
+</div><!-- /.hslide 4 -->
+<div class="hslide slide5">
+<div class="imgsblock">
+<!-- <img src="pic/portfolio/evraz/hslides/5.jpg" width="1300" height="506" alt="" /> -->
+</div><!-- /.imgsblock -->
+<div class="textblock">
+<h2>Лидирующий</h2>
+<p class="d1">Мировой производитель рельсов</p>
+<p class="d2">ЕВРАЗ также один из&nbsp;крупнейших<br>производителей стального листа в&nbsp;Европе,<br>второй по&nbsp;величине производитель стали<br>в&nbsp;ЮАР и&nbsp;лидер по&nbsp;производству труб<br>большого диаметра в&nbsp;Северной Америке</p>
+</div><!-- /.textblock -->
+<script type="text/javascript">
+slides.push({slide: '.slide5', imgs: [
+{src: 'pic/portfolio/evraz/hslides/slide5/r5_7.jpg', w:57, h:58, l:577, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide5/r2_2.jpg', w:57, h:58, l:518, t:46},
+{src: 'pic/portfolio/evraz/hslides/slide5/r4_4.jpg', w:116, h:117, l:460, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide5/r3_6.png', w:57, h:58, l:460, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide5/r5_6.jpg', w:57, h:58, l:402, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide5/r4_3.jpg', w:57, h:58, l:402, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide5/r3_5.jpg', w:57, h:58, l:402, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide5/r5_5.jpg', w:57, h:58, l:344, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide5/r6_1.jpg', w:57, h:58, l:344, t:282},
+{src: 'pic/portfolio/evraz/hslides/slide5/r4_2.png', w:57, h:58, l:344, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide5/r3_4.jpg', w:57, h:58, l:344, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide5/r5_4.jpg', w:57, h:58, l:286, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide5/r4_1.jpg', w:58, h:58, l:286, t:164},
+{src: 'pic/portfolio/evraz/hslides/slide5/r3_3.jpg', w:57, h:58, l:286, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide5/r2_1.jpg', w:57, h:58, l:286, t:46},
+{src: 'pic/portfolio/evraz/hslides/slide5/r5_3.jpg', w:57, h:58, l:227, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide5/r5_2.jpg', w:57, h:58, l:169, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide5/r3_2.jpg', w:116, h:117, l:169, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide5/r3_1.jpg', w:58, h:58, l:110, t:105},
+{src: 'pic/portfolio/evraz/hslides/slide5/r5_1.jpg', w:57, h:58, l:51, t:223},
+{src: 'pic/portfolio/evraz/hslides/slide5/r4_5.jpg', w:57, h:58, l:885, t:165}
+]}); </script>
+</div><!-- /.hslide 5 -->
+</div><!-- /.hslides -->
+</div>
+</div>
+					<div class="work_wrap">
+
+						<div class="columns">
+							<div class="col w480">
+								<div class="work_comment fll">
+									<a class="author" href="#">
+										<img class="circle" src="./pic/pic_14.jpg" alt="Пыжова Анастасия" style="border-radius: 35px;">
+										Пыжова Анастасия
+									</a>
+									<div class="text">
+										<p>Сайт политика у нас в стране, как правило, достаточно грустное зрелище. Фотография персоны, снятая на мыльницу за большим лакированным столом, флаг где-то в хедере сайта, чтобы добавить патриотичности, и много плохо сверстанного текста, написанного явно не для читателей.</p>
+										<p>Я рад, что появилась возможность сделать сайт за рамками этого шаблона. Фактически это промо персоны, одностраничник, где все важное можно посмотреть, не кликая, а просто пользуясь скролом. </p>
+									</div>
+								</div>
+							</div>
+							<div class="col w440">
+								<div class="work_screen tleft">
+									<img alt="" src="pic/portfolio/evraz/3.png" width="460" height="537">
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="tcenter" style="margin-top:40px;">
+						<img src="pic/portfolio/evraz/2.png" alt="" width="974" height="3108">
+					</div>
+
+					<div class="work_wrap">
+						<div class="work_comment">
+							<a href="#" class="author">
+								<img alt="Пыжова Анастасия" src="./pic/pic_14.jpg" class="circle">
+								Пыжова Анастасия
+							</a>
+							<div class="text">
+								<p>Сайт политика у нас в стране, как правило, достаточно грустное зрелище. Фотография персоны, снятая на мыльницу за большим лакированным столом, флаг где-то в хедере сайта, чтобы добавить патриотичности, и много плохо сверстанного текста, написанного явно не для читателей.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tcenter" style="margin-top:40px;">
+						<img src="pic/portfolio/evraz/1.png" alt="" width="974" height="1166">
+					</div>
+
+
+					<div class="work_soc">
+						<img src="pic/fake_soc.png" alt="" width="214" height="20">
+					</div>
+
+				</div><!-- /.work_body -->
+
+
+				<div class="work_details clearfix">
+
+					<div class="work_tags">
+						2013, Персональный сайт, Политика
+					</div>
+					
+					<div class="work_client-works">
+						<div class="title">Другие работы для ProMediaGroup:</div>
+						<ul>
+							<li>Разработка логотипа</li>
+							<li>Набор наклеек</li>
+							<li>Фирменный стиль</li>
+						</ul>
+					</div>
+
+				</div><!-- /.work_details -->
+
+				<div class="work_team">
+					<dl class="col">
+						<dd>Менеджмент:</dd>
+						<dt>
+							<ul>
+								<li>Дима Харченков</li>
+								<li>Влад Карицкий</li>
+								<li>Гурам Бердзенишвили</li>
+							</ul>
+						</dt>
+					</dl>
+					<dl class="col">
+						<dd>Арт-директор:</dd>
+						<dt>
+							<ul>
+								<li>Максим Павлов</li>
+							</ul>
+						</dt>
+					</dl>
+					<dl class="col">
+						<dd>Дизайн:</dd>
+						<dt>
+							<ul>
+								<li>Мария Колокова</li>
+								<li>Денис Шепелев</li>
+							</ul>
+						</dt>
+					</dl>
+					<dl class="col">
+						<dd>Фотограф:</dd>
+						<dt>
+							<ul>
+								<li>Георгий Ростомов</li>
+							</ul>
+						</dt>
+					</dl>
+					<dl class="col">
+						<dd>Верстка:</dd>
+						<dt>
+							<ul>
+								<li>Андрей Баранов</li>
+								<li>Алиев Рамиль</li>
+							</ul>
+						</dt>
+					</dl>
+					<dl class="col">
+						<dd>Разработка:</dd>
+						<dt>
+							<ul>
+								<li>Игорь Цупко</li>
+							</ul>
+						</dt>
+					</dl>
+				</div>
+
+			</div><!-- /.work -->
+
+		</section><!-- /.content -->
+
+
+	</div> <!-- /.inner -->
+
+	<div class="footer">
+		<footer>
+			<div class="copy">© 2004-2013 Notamedia</div><!-- /.copy -->
+			<div class="phone">+7 (495) 995-15-21</div><!-- /.phone -->
+			<div class="email"><a href="mailto:info@notamedia.ru">info@notamedia.ru</a></div><!-- /.email -->
+		</footer>
+		<div class="present"><div><a href="#">скачать презентацию компании<span>2.3 MB</span></a></div></div><!-- /.present -->
+	</div><!-- /.footer -->
+</body>
+</html>

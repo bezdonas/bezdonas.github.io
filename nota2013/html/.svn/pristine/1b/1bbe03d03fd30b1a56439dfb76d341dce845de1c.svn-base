@@ -1,0 +1,224 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>NOTAMEDIA</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="target-densitydpi=160dpi, maximum-scale=2, initial-scale=.75, user-scalable=yes">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+	<script src="js/libs/jquery-1.10.2.min.js"></script>
+	<script src="js/libs/jquery-ui-1.10.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+	<div class="header darkheader">
+		<header>
+		       <div class="logo">
+				<!-- <img src="./svg/logo_reliz.svg" alt /> -->
+				<!-- <embed src="./svg/logo_reliz.svg" type="image/svg+xml"></embed> -->
+				<object data="./svg/logo_reliz.svg" type="image/svg+xml"></object>
+				<!--[if lt IE 9]><img src="./i/logo_notamedia_giant_1.png" alt="" /><![endif]-->
+		        </div><!-- /.logo -->
+			<nav class="mainmenu">
+				<ul><li>
+					<a href="#">Компания</a>
+					</li><li>
+					<a href="#">Услуги</a>
+					</li><li>
+					<a href="#">Клиенты</a>
+					</li><li class="current item">
+					<a href="#">Портфолио</a>
+					</li><li><!-- .current = текущий раздел; .current + .item = статья, новость, запись блога и пр. внутри раздела -->
+					<a href="#">Блог</a>
+					</li><li>
+					<a href="#">Контакты</a>
+				</li></ul>
+			</nav>
+			<div class="soc">
+				<a href="#">&#228;</a>
+				<a href="#">&#229;</a>
+				<a href="#">&#240;</a>
+				<a href="#">&#0036;</a>   
+			</div>
+		</header>
+		<nav class="innermenu">
+			<ul class="first-level">
+				<li>
+					<a href="#">Команда</a>
+				</li><!-- 
+			 --><li class="active">
+					<a href="#">Вакансии</a>
+				</li><!-- 
+			 --><li>
+					<a href="#">Награды</a>
+				</li><!-- 
+			--> <li>
+					<a href="#">Проекты</a>
+				</li>
+			</ul>
+		</nav>
+	</div><!-- /.header -->
+
+	<div class="inner" role="inner"><!-- id="" только для идентификаци страницы ""  -->
+
+		<section class="content">
+
+			<div class="extwrapper">
+				
+				<div class="title-line">
+					<h2>Вакансии</h2>
+				</div>
+
+				<ul class="vacancies">
+					<li class="item color1 urgent">
+						<div class="content">
+							<div class="box-link">
+								<h3 class="dashed-title">Front-end разработчик</h3>
+								<div class="note">
+									С радостью примем в команду усидчивого, ответственного и инициативного front-end разработчика. Фронт работ&nbsp;&mdash; крупный и долгосрочный проект. Умение писать без ошибок обязательно.
+								</div>
+							</div>
+							<div class="details">
+								<div class="topline">
+									<div class="closer"></div>
+									<a href="#" class="pprev"></a>
+									<a href="#" class="pnext"></a>
+									<h3>Front-end разработчик</h3>
+								</div>
+								<div class="greyline">
+									<div class="duties">
+										<h4>Обязанности</h4>
+										<ul>
+											<li>Сбор и формализация требования заказчиков;</li>
+											<li>Анализ целевой аудитории, целей и задач;</li>
+											<li>Написание технических заданий, концепций;</li>
+											<li>Юзабилити-экспертиза и проектирование интерфейсов сайтов и мобильных приложений;</li>
+											<li>Сбор и анализ количественных и качественных данных о поведении пользователей.</li>
+										</ul>
+									</div>
+									<div class="requirements">
+										<h4>Требования</h4>
+										<ul>
+											<li>Хорошие коммуникационные и аналитические способности;</li>
+											<li>Умение грамотно писать и структурировать технические тексты;</li>
+											<li>Способность помочь заказчику сформулировать его требования и пожелания;</li>
+											<li>Понимание принципов разработки сайтов и мобильных </li>
+											<li>Интерес к веб-технологиям, интерактивным коммуникациям;</li>
+											<li>Исполнительность, точность выполнения заданий, внимательность;</li>
+											<li>Умение эффективно работать в команде, умение работать самостоятельно;</li>
+											<li>Опыт проектирования интерфейсов в одном из существующих программных продуктов (Axure, Visio, Balsamiq...).</li>
+										</ul>
+									</div>
+									<a href="#" class="respond">Откликнуться</a>
+									<div class="respond-form">
+										
+									</div>
+								</div>
+								<div class="greenline">
+									<div class="leader">
+										<div class="title">Руководитель отдела</div>
+										<div class="employee">
+											<img class="circle" src="pic/pic_49.jpg" alt="" width="70" height="70">
+											<div class="name">Павлов Максим</div>
+										</div>
+									</div>
+									<div class="colleagues">
+										<div class="title">Будущие коллеги:</div>
+										<div class="employee">
+											<img class="circle" src="pic/pic_14.jpg" alt="" width="70" height="70">
+											<div class="name">Пыжова Анастасия</div>
+										</div>
+										<div class="employee">
+											<img class="circle" src="pic/pic_49.jpg" alt="" width="70" height="70">
+											<div class="name">Павлов Максим</div>
+										</div>
+										<div class="employee">
+											<img class="circle" src="pic/pic_49.jpg" alt="" width="70" height="70">
+											<div class="name">Павлов Максим</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li><!-- 
+здесь нет пробелов
+и видимых символов
+				 --><li class="item color2 urgent">
+						<div class="content">
+							<div class="box-link">
+								<h3 class="dashed-title">Веб-аналитик</h3>
+								<div class="note">
+									Мы ищем веб-аналитика. Того самого, который умеет и любит анализировать посещаемость и управлять потоками пользователей на сайтах.
+								</div>
+							</div>
+						</div>
+					</li><!--
+здесь тоже				
+				--><li class="item color2">
+						<div class="content">
+							<div class="box-link">
+								<h3 class="dashed-title">Системный аналитик</h3>
+								<div class="note">
+									Мы ищем проектировщика сайтов и мобильных приложений. Того, кто умеет придумывать концепции <span class="nobr">wow-проектов</span>, составлять качественную проектную документацию (технические задания) и рисовать структурные схемы страниц (wireframes).
+								</div>
+							</div>
+						</div>
+					</li><!-- 
+итд				
+				 --><li class="item color1">
+						<div class="content">
+							<div class="box-link">
+								<h3 class="dashed-title">Ведущий <span class="nobr">битрикс-разработчик</span></h3>
+								<div class="note">
+									Ищем в команду разработчика, имеющего теплые отношения с 1С-Битрикс.
+								</div>
+							</div>
+						</div>
+					</li><!-- 
+				 --><li class="item color1">
+						<div class="content">
+							<div class="box-link">
+								<h3 class="dashed-title">Менеджер <span class="nobr">интернет-проектов</span></h3>
+								<div class="note">
+									Нам нужны лучшие  в мире менеджеры проектов. Интересные задачи и неограниченные возможности для обучения, совершенствования и роста.
+								</div>
+							</div>
+						</div>
+					</li><!-- 
+				 --><li class="item empty">
+						 <div class="content">
+						 	Если вы не нашли то, что искали, напишите нам на <a href="#">hr@color1media.ru</a>. Возможно, мы просто еще не знаем, что нам нужны именно вы.
+						 </div>
+					</li>
+				</ul>
+
+			</div>
+
+		</section><!-- /.content -->
+
+
+	</div> <!-- /.inner -->
+
+	<div class="footer">
+		<footer>
+			<div class="copy">© 2004-2013 Notamedia</div><!-- /.copy -->
+			<div class="phone">+7 (495) 995-15-21</div><!-- /.phone -->
+			<div class="email"><a href="mailto:info@notamedia.ru">info@notamedia.ru</a></div><!-- /.email -->
+		</footer>
+		<div class="present"><div><a href="#">скачать презентацию компании<span>2.3 MB</span></a></div></div><!-- /.present -->
+	</div><!-- /.footer -->
+</body>
+</html>

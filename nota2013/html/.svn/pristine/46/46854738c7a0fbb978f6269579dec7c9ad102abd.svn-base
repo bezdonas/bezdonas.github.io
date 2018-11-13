@@ -1,0 +1,10 @@
+/* Author:
+
+*/
+$(function() {
+	
+}); // DOM loaded
+
+$(window).load(function(){
+});
+

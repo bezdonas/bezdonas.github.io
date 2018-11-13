@@ -1,0 +1,1154 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>NOTAMEDIA</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="target-densitydpi=160dpi, maximum-scale=2, initial-scale=.75, user-scalable=yes">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/style.css"><!-- для всего сайта -->
+	<link rel="stylesheet" href="css/mainpage.css"><!-- только для морды -->
+
+	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+	<script src="js/libs/jquery-1.10.2.min.js"></script>
+	<script src="js/libs/jquery-ui-1.10.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+
+	<script src="js/mainpage.js"></script><!-- только для морды -->
+
+</head>
+<body class="screenmain"><!-- .screenmain только для первого экрана главной страницы -->
+	<div class="header">
+		<header>
+		        <div class="logo">
+				<!-- <img src="./svg/logo_reliz.svg" alt /> -->
+				<!-- <embed src="./svg/logo_reliz.svg" type="image/svg+xml"></embed> -->
+				<object data="./svg/logo_reliz.svg" type="image/svg+xml"></object>
+				<!--[if lt IE 9]><img src="./i/logo_notamedia_giant_1.png" alt="" /><![endif]-->
+		        </div><!-- /.logo -->
+				<a href="http://notamedia.ru/" class="logo"></a>
+			<nav class="mainmenu">
+				<ul><li>
+					<a href="#">Компания</a>
+					</li><li>
+					<a href="#">Услуги</a>
+					</li><li>
+					<a href="#">Клиенты</a>
+					</li><li>
+					<a href="#">Портфолио</a>
+					</li><li>
+					<a href="#">Блог</a>
+					</li><li>
+					<a href="#">Контакты</a>
+				</li></ul>
+			</nav>
+			<div class="soc">
+				<a href="#">&#228;</a>
+				<a href="#">&#229;</a>
+				<a href="#">&#240;</a>
+				<a href="#">&#0036;</a>   
+			</div>
+		</header>
+		<div class="header_bg"></div>
+	</div><!-- /.header -->
+
+	<div class="main" role="main"><!-- id="" только для идентификаци страницы ""  -->
+
+
+		<div class="screennav">
+			<div>
+			<div class="sleft" data-bodyclass="screenleft">
+				<a href="#mainportfolio"><span class="square"><i></i></span><span class="title"><strong>Смотреть</strong><em>работы в портфолио</em></span></a>
+			</div><!-- /.sleft --><div class="smain current" data-bodyclass="screenmain">
+				<a href="#mainpage"><span class="square"><i></i></span><span class="title"><strong>Notamedia</strong><em>начало</em></span></a>
+			</div><!-- /.smain --><div class="sright" data-bodyclass="screenright">
+				<a href="#mainspecial"><span class="square"><i></i></span><span class="title"><strong>Понять</strong><em>нашу специализацию</em></span></a>
+			</div><!-- /.sright --><div class="sbottom" data-bodyclass="screenbottom">
+				<a href="#maincompany"><span class="square"><i></i></span><span class="title"><strong>Узнать</strong><em>подробнее о компании</em></span></a>
+			</div><!-- /.sbottom -->
+			</div>
+		</div><!-- /.screennav -->
+
+
+		<!-- .screen - один экран, mainpage - имя экрана, data-bodyclass - добавляется классом к body, если экран активен 
+		    data-dirx="0" и  data-diry="0" координата в матрице экранов, 0,0 == центр (dirx,diry) == mainpage
+		    [-1,-1][0,-1][1,-1]
+		    [-1,0] [0,0] [1,0]
+		    [-1,1] [0,1] [1,1]
+		    где 
+		    [0,0] = mainpage (screenmain)
+		    [-1,0] = mainportfolio (screenleft)
+		    [1,0] = mainspecial (screenright)
+		    [0,1] = mainbottom (screenbottom)
+		-->
+		<section class="screen mainpage" id="mainpage" data-bodyclass="screenmain" data-dirx="0" data-diry="0">
+			
+			<div class="b">	
+				<div>
+				<a href="#">
+					<span>
+					<strong>Открытые вакансии</strong>
+					<em>Нам нужны амбициозные коллеги с<br />прямыми руками и извилистым<br />мозгом.</em>
+					</span><!--  --><img src="./pic/b_vac.png" alt="" />
+				</a>
+				</div>
+			</div><!-- /.b -->
+
+			<div class="slogan">
+				Создаем медиапространства
+			</div><!-- /.slogan -->
+
+			<div class="logo_giant">
+				<!-- <img src="./svg/logo_reliz.svg" alt /> -->
+				<!-- <embed src="./svg/logo_reliz.svg" type="image/svg+xml"></embed> -->
+				<object data="./svg/logo_reliz.svg" type="image/svg+xml"></object>
+				<!--[if lt IE 9]><img src="./i/logo_notamedia_giant_1.png" alt="" /><![endif]-->
+			</div>
+
+			<div class="introducing">
+				Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о фактическом начале нового тысячелетия. 
+				Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о фактическом начале нового тысячелетия.
+			</div><!-- /.introducing -->
+			
+
+			<div class="hoverstyle toleft"><div><div class="bg"><div class="aside"></div></div></div></div>
+			<div class="hoverstyle tobottom"><div><div class="bg"><div class="aside"></div></div></div></div>
+			<div class="hoverstyle toright"><div><div class="bg"><div class="aside"></div></div></div></div>
+
+			<div class="mainlocalnav">
+				<a href="#mainportfolio" class="toleft" data-rel="toleft" data-bodylogo="logotoleft">
+					<span class="adescr"><span>Работы могут рассказать о нас лучше, чем любой описательный раздел.</span></span>
+					<strong>Смотреть</strong>
+					<em>работы в портфолио</em>
+				</a>
+				<a href="#maincompany" class="tobottom" data-rel="tobottom" data-bodylogo="logotobottom">
+					<span class="adescr"><span>Самые важные моменты которые нужно знать, принимая решение о работе с нами.</span></span>
+					<strong>Узнать</strong>
+					<em>подробнее о компании</em>
+				</a>
+				<a href="#mainspecial" class="toright" data-rel="toright" data-bodylogo="logotoright">
+					<span class="adescr"><span>Список услуг формирует нашу основную специализациию. Мы делаем новые медиа.</span></span>
+					<strong>Понять</strong>
+					<em>нашу специализацию</em>
+				</a>
+			</div><!-- /.localnav -->
+		</section><!-- /.screen .mainpage -->
+
+		<section class="screen mainportfolio" id="mainportfolio" data-bodyclass="screenleft" data-dirx="-1" data-diry="0">
+			<nav class="portfoliomenu">
+				<a href="#">ID</a><br />
+				<a href="#">WEB</a><br />
+				<a href="#">Полиграфия</a><br />
+				<a href="#">Мобильные приложения</a>
+			</nav>
+
+			<div class="imgset">
+				<div class="item">
+					<img src="./pic/pic_05.jpg" alt="" class="flexbg" />
+					<div class="aboutitem">
+						<div class="type">Разработка сайта</div>
+						<div class="title">GEOID&nbsp;&#8212;&nbsp;поиск отелей</div>
+						<div class="more"><a href="#">Детали проекта</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="imgset">
+				<div class="item">
+					<img src="./pic/pic_06.jpg" alt="" class="flexbg" />
+					<div class="aboutitem">
+						<div class="type">Логотип и фирменный стиль</div>
+						<div class="title">Всероссийская федерация плавания</div>
+						<div class="more"><a href="#">Детали проекта</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="imgset">
+				<div class="item">
+					<img src="./pic/pic_07.jpg" alt="" class="flexbg" />
+					<div class="aboutitem">
+						<div class="type">Замена масла</div>
+						<div class="title">Ford Ranger мкпп&nbsp;и&nbsp;раздатка</div>
+						<div class="more"><a href="#">Детали проекта</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="imgset">
+				<div class="item">
+					<img src="./pic/pic_08.jpg" alt="" class="flexbg" />
+					<div class="aboutitem">
+						<div class="type">Промышленный дизайн</div>
+						<div class="title">Автомобиль Toyota&nbsp;Avensis</div>
+						<div class="more"><a href="#">Детали проекта</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="imgset">
+				<div class="item">
+					<img src="./pic/pic_09.jpg" alt="" class="flexbg" />
+					<div class="aboutitem">
+						<div class="type">Этикетки и ценники</div>
+						<div class="title">Тапочки</div>
+						<div class="more"><a href="#">Детали проекта</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="imgset">
+				<div class="item">
+					<img src="./pic/pic_10.jpg" alt="" class="flexbg" />
+					<div class="aboutitem">
+						<div class="type">Историческая встреча</div>
+						<div class="title">Дурак на дороге</div>
+						<div class="more"><a href="#">Детали проекта</a></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- /.screen .mainportfolio -->
+
+
+		<section class="screen mainspecial" id="mainspecial" data-bodyclass="screenright" data-dirx="1" data-diry="0">
+
+			<div class="rowtop aboutspec">
+
+				<h1>Создаем медиапространства</h1>
+
+				<ul data-hoverlayerclass="haboutspec"><li>
+					<a href="#">Масс-медиа</a>
+					<div class="hover">
+						<img src="./pic/pic_04.jpg" alt="" />
+						<div class="txt">
+							<h3><img src="./i/ico_01.png" alt="" />
+							Масс-медиа
+							<!-- Масс<span>медиа</span> --></h3>
+							<div class="descr">Промосайты и прочая фигня.</div>
+							<ul>
+								<li><a href="#"><strong>Андрей Воробьев</strong>
+								разработка предвыборного сайта кандидата в губернаторы МО</a></li>
+								<li><a href="#"><strong>Адриан Крупчанский</strong>
+								кейс</a></li>
+								<li><a href="#"><strong>Госуслуги</strong>
+								разработка сайта</a></li>
+							</ul>
+							<div class="more"><a href="#">еще 15 проектов</a></div>
+						</div><!-- /.txt -->
+					</div><!-- /.hover -->
+				</li><li>
+					<a href="#">Корпоративные</a>
+					<div class="hover">
+						<img src="./pic/pic_03.jpg" alt="" />
+						<div class="txt">
+							<h3><img src="./i/ico_01.png" alt="" />
+							Корпоративные
+							<!-- Personal<span>media</span> --></h3>
+							<div class="descr">Промосайты персон и частные блоги.</div>
+							<ul>
+								<li><a href="#"><strong>Андрей Воробьев</strong>
+								разработка предвыборного сайта кандидата в губернаторы МО</a></li>
+								<li><a href="#"><strong>Адриан Крупчанский</strong>
+								кейс</a></li>
+								<li><a href="#"><strong>Госуслуги</strong>
+								разработка сайта</a></li>
+							</ul>
+							<div class="more"><a href="#">еще 5 проектов</a></div>
+						</div><!-- /.txt -->
+					</div><!-- /.hover -->
+				</li><li>
+					<a href="#">Государственные</a>
+					<div class="hover">
+						<img src="./pic/pic_04.jpg" alt="" />
+						<div class="txt">
+							<h3><img src="./i/ico_02.png" alt="" />
+							Государственные
+							<!-- Government<span>media</span> --></h3>
+							<div class="descr">Мы успешно работаем над государственными проектами.</div>
+							<ul>
+								<li><a href="#"><strong>Андрей Воробьев</strong>
+								разработка предвыборного сайта кандидата в губернаторы МО</a></li>
+								<li><a href="#"><strong>Адриан Крупчанский</strong>
+								кейс</a></li>
+								<li><a href="#"><strong>Госуслуги</strong>
+								разработка сайта</a></li>
+							</ul>
+							<div class="more"><a href="#">еще 12 проектов</a></div>
+						</div><!-- /.txt -->
+					</div><!-- /.hover -->
+				</li><li>
+					<a href="#">Социальные</a>
+					<div class="hover">
+						<img src="./pic/pic_03.jpg" alt="" />
+						<div class="txt">
+							<h3><img src="./i/ico_01.png" alt="" />
+							Социальные
+							<!-- Corporate<span>media</span> --></h3>
+							<div class="descr">Промосайты корпорация и пр. фигни.</div>
+							<ul>
+								<li><a href="#"><strong>Андрей Воробьев</strong>
+								разработка предвыборного сайта кандидата в губернаторы МО</a></li>
+								<li><a href="#"><strong>Адриан Крупчанский</strong>
+								кейс</a></li>
+								<li><a href="#"><strong>Госуслуги</strong>
+								разработка сайта</a></li>
+							</ul>
+							<div class="more"><a href="#">еще 8 проектов</a></div>
+						</div><!-- /.txt -->
+					</div><!-- /.hover -->
+				</li><li>
+					<a href="#">Персональные</a>
+					<div class="hover">
+						<img src="./pic/pic_04.jpg" alt="" />
+						<div class="txt">
+							<h3><img src="./i/ico_01.png" alt="" />
+							Персональные
+							<!-- Education<span>media</span> --></h3>
+							<div class="descr">Промосайты образовательные.</div>
+							<ul>
+								<li><a href="#"><strong>Андрей Воробьев</strong>
+								разработка предвыборного сайта кандидата в губернаторы МО</a></li>
+								<li><a href="#"><strong>Адриан Крупчанский</strong>
+								кейс</a></li>
+								<li><a href="#"><strong>Госуслуги</strong>
+								разработка сайта</a></li>
+							</ul>
+							<div class="more"><a href="#">еще 11 проектов</a></div>
+						</div><!-- /.txt -->
+					</div><!-- /.hover -->
+				</li><li>
+					<a href="#">НКО</a>
+					<div class="hover">
+						<img src="./pic/pic_03.jpg" alt="" />
+						<div class="txt">
+							<h3><img src="./i/ico_01.png" alt="" />
+							НКО
+							<!-- Social<span>media</span> --></h3>
+							<div class="descr">Социальные сети и твиттеры.</div>
+							<ul>
+								<li><a href="#"><strong>Андрей Воробьев</strong>
+								разработка предвыборного сайта кандидата в губернаторы МО</a></li>
+								<li><a href="#"><strong>Адриан Крупчанский</strong>
+								кейс</a></li>
+								<li><a href="#"><strong>Госуслуги</strong>
+								разработка сайта</a></li>
+							</ul>
+							<div class="more"><a href="#">еще 7 проектов</a></div>
+						</div><!-- /.txt -->
+					</div><!-- /.hover -->
+				</li></ul>
+			
+				<div class="descr"><div class="valignw">
+					Мы стараемся охватывать самые разные сферы современной жизни, чтобы предлагать актуальный, качественный и эффективный digital-продукт.
+				<div class="ieonly"><!-- ieonly --></div></div><!-- /.valignw --></div><!-- /.descr -->
+
+			</div><!-- /.aboutspec -->
+
+			<div class="rowbottom">
+				<div class="serv">
+
+					<h2>Услуги</h2>
+					
+					<p><a href="#">Стратегия</a>
+					<span>online-исследования</span><br />
+					<span>коммуникационная стратегия</span><br />
+					<span>SMM-стратегия</span><br />
+					<span>digital-стратегия</span></p>
+
+				
+					<p><a href="#">Производство</a>
+					<span>проектирование</span><br />
+					<span>дизайн</span><br />
+					<span>программирование</span><br />
+					<span>верстка</span><br />
+					<span>тестирвоание</span><br />
+					<span>внедрение</span></p>
+
+					<p><a href="#">Продвижение</a>
+					<span>SMM, SEO, PR</span><br />
+					<span>контекстная реклама</span><br />
+					<span>медийная реклама</span><br />
+					<span>мобильная реклама</span><br />
+					<span>интегрированные рекламные кампании</span></p>
+
+
+				
+					<p class="servwide"><a href="#">Поддержка</a>
+					<span>техническая поддержка</span><br />
+					<span>хостинг</span><br />
+					<span>системное администрирование</span><br />
+
+					<span>высоконагруженные решения</span><br />
+					<span>дистрибуция ПО</span><br />
+					<span>консалтинг</span></p>
+	
+				</div><!-- /.serv -->
+
+				<div class="case">
+					
+					<h2>Кейсы</h2>
+					<ul class="casecarousel">
+						<li class="current"><img src="./pic/pic_01.jpg" alt="" /><span><a href="#">Правительство Москвы</a> Разработка типового решения портала</span></li>
+						<li><img src="./pic/pic_02.jpg" alt="" /><span><a href="#">Дилетант</a> Разработка нового исторического СМИ</span></li>
+						<li><img src="./pic/pic_07.jpg" alt="" /><span><a href="#">Public Post</a> Разработка типового решения портала</span></li>
+						<li><img src="./pic/pic_08.jpg" alt="" /><span><a href="#">Правительство Москвы</a> Разработка типового решения портала</span></li>
+						<li><img src="./pic/pic_09.jpg" alt="" /><span><a href="#">Дилетант</a> Разработка нового исторического СМИ</span></li>
+						<li><img src="./pic/pic_06.jpg" alt="" /><span><a href="#">Public Post</a> Разработка типового решения портала</span></li>
+					</ul><!-- /.casecarousel -->
+	
+				</div>
+			</div><!-- /.rowbottom -->
+
+
+		</section><!-- /.screen .mainspecial -->
+
+<!-- ПОДРОБНЕЕ О КОМПАНИИ -->
+		<section class="screen maincompany" id="maincompany" data-bodyclass="screenbottom" data-dirx="0" data-diry="1">
+
+<!-- первый экран -->
+			<div class="subscreen ssmain current">
+
+				<div class="bg"><!-- фон, тут им проще управлять --></div>
+
+				<div class="slidecont">
+			        <div class="rowtop">
+					<h1>В двух словах</h1>
+					<div class="descr">
+						<div class="valignw">
+							
+							Мы стараемся охватывать самые разные сферы современной жизни, 
+							чтобы предлагать актуальный, качественный и эффективный digital-продукт.
+							
+							<div class="ieonly"><!-- ieonly --></div>
+						</div><!-- /.valignw -->
+					</div><!-- /.descr -->
+			        </div><!-- /.rowtop -->
+			
+				<div class="rowbottom">
+					<div class="mclocalnav">
+						<div>
+							<a href="#about-service">
+								<img src="./i/sb_ic_01.png" alt="Полный спектр услуг" />
+								<span>Полный спектр услуг</span>
+							</a>
+						</div><div>
+							<a href="#about-process">
+								<img src="./i/sb_ic_02.png" alt="Процессы" />
+								<span>Процессы</span>
+							</a>
+						</div><div>
+							<a href="#about-ownproj">
+								<img src="./i/sb_ic_03.png" alt="Собственные успешные проекты" />
+								<span>Собственные успешные проекты</span>
+							</a>
+						</div><div>
+							<a href="#about-staff">
+								<img src="./i/sb_ic_04.png" alt="Команда" />
+								<span>Команда</span>
+							</a>
+						</div><div>
+							<a href="#about-awards">
+								<img src="./i/sb_ic_05.png" alt="Места в рейтингах и награды" />
+								<span>Места в&nbsp;рейтингах и&nbsp;награды</span>
+							</a>
+						</div><div>
+							<a href="#about-expert">
+								<img src="./i/sb_ic_06.png" alt="Комиссии и ассоциации" />
+								<span>Комиссии и&nbsp;ассоциации</span>
+							</a>
+						</div>
+					</div>
+				</div><!-- /.rowbottom -->
+
+				<a href="#" class="nextscreen">далее</a>
+				</div><!-- /.slidecont -->
+			</div><!-- /.subscreen -->
+
+<!-- экран со слайдами -->
+			<div class="subscreen ssinner">
+				<div class="sidemenu"><!-- меню по слайдам -->
+						<div>
+							<a href="#about-service">
+								<img src="./i/sb_ic_01_.png" alt="Полный спектр услуг" />
+								<span>Полный спектр услуг</span>
+							</a>
+						</div><div>
+							<a href="#about-process">
+								<img src="./i/sb_ic_02_.png" alt="Процессы" />
+								<span>Процессы</span>
+							</a>
+						</div><div>
+							<a href="#about-ownproj">
+								<img src="./i/sb_ic_03_.png" alt="Собственные успешные проекты" />
+								<span>Собственные успешные проекты</span>
+							</a>
+						</div><div>
+							<a href="#about-staff">
+								<img src="./i/sb_ic_04_.png" alt="Команда" />
+								<span>Команда</span>
+							</a>
+						</div><div>
+							<a href="#about-awards">
+								<img src="./i/sb_ic_05_.png" alt="Места в рейтингах и награды" />
+								<span>Места в&nbsp;рейтингах и&nbsp;награды</span>
+							</a>
+						</div><div>
+							<a href="#about-expert">
+								<img src="./i/sb_ic_06_.png" alt="Комиссии и ассоциации" />
+								<span>Комиссии и&nbsp;ассоциации</span>
+							</a>
+						</div>
+				</div><!-- /.sidemenu -->
+
+                                
+                                
+<!-- УСЛУГИ -->
+                                <div class="sslide about-service" id="about-service">
+
+					<div class="bg"><!-- фон, тут им проще управлять -->
+						<div class="noise"><img src="./i/noise.png" alt="" /></div>
+					</div>
+
+				<div class="slidecont">
+					<div class="rowtop">
+						<h1>Полный спектр услуг</h1>
+						<div class="descr">
+							<div class="valignw">
+							
+								Мы стараемся охватывать самые разные сферы современной жизни, 
+								чтобы предлагать актуальный, качественный и эффективный digital-продукт.
+							
+								<div class="ieonly"><!-- ieonly --></div>
+							</div><!-- /.valignw -->
+						</div><!-- /.descr -->
+			        	</div><!-- /.rowtop -->
+			
+					<div class="rowbottom">
+						<div class="servlist">
+						<ul>
+							<li class="s_01">
+								<div class="sbg"></div>
+								<div class="sdescr">
+									<img src="./i/s_01.png" alt="" />
+									<h3>Стратегия</h3>
+									<p>Текст про то что мы называем медиапроектами. Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о начале нового тысячелетия.</p>
+								</div>
+							</li><li class="s_02">
+								<div class="sbg"></div>
+								<div class="sdescr">
+									<img src="./i/s_02.png" alt="" />
+									<h3>Прототипы и техническое задание</h3>
+									<p>Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о начале нового тысячелетия.</p>
+								</div>
+							</li><li class="s_03">
+								<div class="sbg"></div>
+								<div class="sdescr">
+									<img src="./i/s_03.png" alt="" />
+									<h3>Дизайн</h3>
+									<p>Текст про то что мы называем медиапроектами. Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о начале нового тысячелетия.</p>
+								</div>
+							</li><li class="s_04">
+								<div class="sbg"></div>
+								<div class="sdescr">
+									<img src="./i/s_04.png" alt="" />
+									<h3>Вёрстка</h3>
+									<p>Текст про то что мы называем медиапроектами. Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о начале нового тысячелетия.</p>
+								</div>
+							</li><li class="s_05">
+								<div class="sbg"></div>
+								<div class="sdescr">
+									<img src="./i/s_05.png" alt="" />
+									<h3>Сборка</h3>
+									<p>Текст про то что мы называем медиапроектами. Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о начале нового тысячелетия.</p>
+								</div>
+							</li><li class="s_06">
+								<div class="sbg"></div>
+								<div class="sdescr">
+									<img src="./i/s_06.png" alt="" />
+									<h3>Наполнение контентом</h3>
+									<p>Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о начале нового тысячелетия.</p>
+								</div>
+							</li><li class="s_07">
+								<div class="sbg"></div>
+								<div class="sdescr">
+									<img src="./i/s_07.png" alt="" />
+									<h3>Тестирование</h3>
+									<p>Текст про то что мы называем медиапроектами. Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о начале нового тысячелетия.</p>
+								</div>
+							</li><li class="s_08">
+								<div class="sbg"></div>
+								<div class="sdescr">
+									<img src="./i/s_08.png" alt="" />
+									<h3>Внедрение</h3>
+									<p>Текст про то что мы называем медиапроектами. Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о начале нового тысячелетия.</p>
+								</div>
+							</li><li class="s_09">
+								<div class="sbg"></div>
+								<div class="sdescr">
+									<img src="./i/s_09.png" alt="" />
+									<h3>Поддержка</h3>
+									<p>Текст про то что мы называем медиапроектами. Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о начале нового тысячелетия.</p>
+								</div>
+							</li><li class="s_10">
+								<div class="sbg"></div>
+								<div class="sdescr">
+									<img src="./i/s_10.png" alt="" />
+									<h3>Продвижение</h3>
+									<p>Текст про то что мы называем медиапроектами. Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о начале нового тысячелетия.</p>
+								</div>
+							</li>
+						</ul>
+						</div><!-- /.servlist -->
+					</div><!-- /.rowbottom -->
+
+				</div><!-- /.slidecont -->
+                                </div><!-- /.sslide -->
+
+                                
+<!-- ПРОЦЕССЫ -->                                
+                                <div class="sslide about-process current" id="about-process">
+
+					<div class="bg"><!-- фон, тут им проще управлять --></div>
+
+				<div class="slidecont">
+					<div class="rowtop">
+						<h1>Процессы</h1>
+						<div class="descr">
+							<div class="valignw">
+							
+								Мы стараемся охватывать самые разные сферы современной жизни, 
+								чтобы предлагать актуальный, качественный и эффективный digital-продукт.
+							
+								<div class="ieonly"><!-- ieonly --></div>
+							</div><!-- /.valignw -->
+						</div><!-- /.descr -->
+			        	</div><!-- /.rowtop -->
+			
+					<div class="rowbottom">
+						<ul class="proclist">
+							<li>
+								<div class="valignw">
+									<img src="./i/proc_01.png" alt="" />
+									<div class="ieonly"><!-- ieonly --></div>
+								</div><!-- /.valignw -->
+								<h3>Двухуровневый менеджмент</h3>
+								<p>Текст про то что мы называем медиапроектами. Наша компания появилась в 2004 году, когда все прогрессивное тысячелетия.</p>
+							</li><li>
+								<div class="valignw">
+									<img src="./i/proc_02.png" alt="" />
+									<div class="ieonly"><!-- ieonly --></div>
+								</div><!-- /.valignw -->
+								<h3>KPI (Ключевые показатели эффективности)</h3>
+								<p>Наша компания появилась в 2004 году, когда все ожесточенно спорило о начале нового тысячелетия.</p>
+							</li><li>
+								<div class="valignw">
+									<img src="./i/proc_03.png" alt="" />
+									<div class="ieonly"><!-- ieonly --></div>
+								</div><!-- /.valignw -->
+								<h3>Поддержка</h3>
+								<p>Наша компания появилась в 2004 году, когда все прогрессивное человечество ожесточенно спорило о начале нового тысячелетия.</p>
+							</li>
+						</ul><!-- /.proclist -->
+					</div><!-- /.rowbottom -->
+
+
+				</div><!-- /.slidecont -->
+                                </div><!-- /.sslide -->
+
+                                
+<!-- ПРОЕКТЫ -->
+                                <div class="sslide about-ownproj" id="about-ownproj">
+
+					<!-- <div class="bg"> --><!-- здесь фон в каждом слайде --><!-- </div> -->
+
+				<div class="slidecont">
+					<div class="rowtop">
+						<h1>Собственные проекты</h1>
+						<div class="descr">
+							<div class="valignw">
+							
+								Некоммерческие проекты — это наше полезное хобби. Оно не позволяет нам останавливаться и дает возможность развиваться.
+
+								<div class="m_own">
+									<a href="#own_end"><img src="./i/m_own_01.png" alt="Энциклопедия нашего детства"></a>
+									<a href="#own_mkn"><img src="./i/m_own_02.png" alt="Москва, которой нет"></a>
+									<a href="#own_rf"><img src="./i/m_own_03.png" alt="retrofoto.ru"></a>
+								</div>
+								
+								<div class="ieonly"><!-- ieonly --></div>
+							</div><!-- /.valignw -->
+						</div><!-- /.descr -->
+			        	</div><!-- /.rowtop -->
+			
+					<div class="s_own_wrapper">
+						<div class="s_own own_end" id="own_end">
+							<div class="bg"><!-- фон, тут им проще управлять --></div>
+							<div class="sfoto">
+								<!-- набор фотографий -->
+								<!-- data-x и data-y расстояние от центра страницы до центра картинки в em (здесь: 1em = 16px)
+								если не указано, назначаются random-координаты
+								сортировка картинок влияет на их z-index(первая ниже последней) 
+								и на вычисление рандомных координат (если не указаны data-x и data-y) -->
+								<img src="./i/end_main/pic_04.jpg" alt="" data-x="-36" data-y="-16" />
+								<img src="./i/end_main/pic_03.jpg" alt="" data-x="-40" data-y="14" />
+								<img src="./i/end_main/pic_02.jpg" alt="" data-x="-34" data-y="5" />
+								<img src="./i/end_main/pic_01.jpg" alt="" data-x="-28" data-y="-8" />
+								<img src="./i/end_main/pic_05.jpg" alt="" data-x="-16" data-y="17" />
+								<img src="./i/end_main/pic_07.jpg" alt="" data-x="26" data-y="0" />
+								<img src="./i/end_main/pic_06.jpg" alt="" data-x="36" data-y="-11" />
+								<img src="./i/end_main/pic_08.jpg" alt="" data-x="11" data-y="24" />
+								<img src="./i/end_main/pic_09.jpg" alt="" data-x="15" data-y="-27" />
+								<img src="./i/end_main/pic_10.jpg" alt="" data-x="40" data-y="7" />
+							</div><!-- /.sfoto -->
+							<div class="sdescr"><div class="sdescrinner">
+								<div class="pic"><img src="./i/s_own_01.png" alt="Энциклопедия нашего детства"></div>
+								<p>Проект о нашем и вашем детстве, виртуальная книга воспоминаний всех, кто родился
+									и вырос в СССР. Он появился в сети 20 октября 2005 года. Работали мы над ним
+									с особым азартом и удовольствием, ведь большинство из нас абсолютно вписываются
+									в рамки 1976-1982. Поэтому деятельное участие принимали все.</p>
+							</div><!-- /.sdescrinner --></div><!-- /.sdescr -->
+						</div><!-- /.s_own -->
+						<div class="s_own own_mkn" id="own_mkn">
+							<div class="bg"><!-- фон, тут им проще управлять --></div>
+							<div class="sfoto">
+								<!-- набор фотографий -->
+								<!-- data-x и data-y расстояние от центра страницы до центра картинки в em (здесь: 1em = 16px)
+								если не указано, назначаются random-координаты
+								сортировка картинок влияет на их z-index(первая ниже последней) 
+								и на вычисление рандомных координат (если не указаны data-x и data-y) -->
+								<img src="./i/mkn_main/pic_02.jpg" alt="" data-x="-26" data-y="-4" />
+								<img src="./i/mkn_main/pic_01.jpg" alt="" data-x="-33.5" data-y="-14" />
+								<img src="./i/mkn_main/pic_03.jpg" alt="" data-x="-39" data-y="12.75" />
+								<img src="./i/mkn_main/pic_04.jpg" alt="" data-x="-15.75" data-y="-26.25" />
+								<img src="./i/mkn_main/pic_05.jpg" alt="" data-x="-14.4" data-y="26.5" />
+								<img src="./i/mkn_main/pic_07.jpg" alt="" data-x="35.75" data-y="-2.5" />
+								<img src="./i/mkn_main/pic_06.jpg" alt="" data-x="25.25" data-y="-8.8" />
+								<img src="./i/mkn_main/pic_08.jpg" alt="" data-x="15.75" data-y="16.875" />
+								<img src="./i/mkn_main/pic_09.jpg" alt="" data-x="38.75" data-y="-26" />
+								<img src="./i/mkn_main/pic_10.jpg" alt="" data-x="31.875" data-y="9" />
+							</div><!-- /.sfoto -->
+							<div class="sdescr"><div class="sdescrinner">
+								<div class="pic"><img src="./i/s_own_02.png" alt="Москва, которой нет"></div>
+								<p>Проект о нашем и вашем детстве, виртуальная книга воспоминаний всех, кто родился
+									и вырос в СССР. Он появился в сети 20 октября 2005 года. Работали мы над ним
+									с особым азартом и удовольствием, ведь большинство из нас абсолютно вписываются
+									в рамки 1976-1982. Поэтому деятельное участие принимали все.</p>
+							</div><!-- /.sdescrinner --></div><!-- /.sdescr -->
+						</div><!-- /.s_own -->
+						<div class="s_own own_rf" id="own_rf">
+							<div class="bg"><!-- фон, тут им проще управлять --></div>
+							<div class="sfoto">
+								<!-- набор фотографий -->
+								<!-- data-x и data-y расстояние от центра страницы до центра картинки в em (здесь: 1em = 16px)
+								если не указано, назначаются random-координаты
+								сортировка картинок влияет на их z-index(первая ниже последней) 
+								и на вычисление рандомных координат (если не указаны data-x и data-y) -->
+								<img src="./i/rf_main/pic_04.jpg" alt="" data-x="-28.5" data-y="-14.75" />
+								<img src="./i/rf_main/pic_01.jpg" alt="" data-x="-36.875" data-y="-24.375" />
+								<img src="./i/rf_main/pic_02.jpg" alt="" data-x="-38.75" data-y="-8" />
+								<img src="./i/rf_main/pic_03.jpg" alt="" data-x="-40" data-y="15" />
+								<img src="./i/rf_main/pic_05.jpg" alt="" data-x="-19.8" data-y="6.375" />
+								<img src="./i/rf_main/pic_06.jpg" alt="" data-x="-14" data-y="26.6875" />
+								<img src="./i/rf_main/pic_08.jpg" alt="" data-x="26.75" data-y="-18.9" />
+								<img src="./i/rf_main/pic_09.jpg" alt="" data-x="34.875" data-y="-2.25" />
+								<img src="./i/rf_main/pic_10.jpg" alt="" data-x="35.8125" data-y="16.4375" />
+								<img src="./i/rf_main/pic_07.jpg" alt="" data-x="24" data-y="8.25" />
+							</div><!-- /.sfoto -->
+							<div class="sdescr"><div class="sdescrinner">
+								<div class="pic"><img src="./i/s_own_03.png" alt="retrofoto.ru"></div>
+								<p>Проект о нашем и вашем детстве, виртуальная книга воспоминаний всех, кто родился
+									и вырос в СССР. Он появился в сети 20 октября 2005 года. Работали мы над ним
+									с особым азартом и удовольствием, ведь большинство из нас абсолютно вписываются
+									в рамки 1976-1982. Поэтому деятельное участие принимали все.</p>
+							</div><!-- /.sdescrinner --></div><!-- /.sdescr -->
+						</div><!-- /.s_own -->
+			        	</div><!-- /.s_own_wrapper -->
+
+
+
+				</div><!-- /.slidecont -->
+                                </div><!-- /.sslide -->
+
+<!-- КОМАНДА -->
+                                <div class="sslide about-staff" id="about-staff">
+
+					<div class="bg"><!-- фон, тут им проще управлять --></div>
+
+				<div class="slidecont">
+					<div class="rowtop">
+						<h1>Команда</h1>
+						<div class="descr">
+							<div class="valignw">
+							
+								Некоммерческие проекты — это наше полезное хобби. Оно не позволяет нам останавливаться и дает возможность развиваться.
+								
+								<div class="ieonly"><!-- ieonly --></div>
+							</div><!-- /.valignw -->
+						</div><!-- /.descr -->
+			        	</div><!-- /.rowtop -->
+			
+
+			                <div class="rowbottom">
+				                <div class="staffcontainer">
+				                <div class="staffwrapper">
+				                	<ul>
+				                	<li class="staffslide ss1">
+					                	<ul data-hoverlayerclass="hovstaffslide1">
+				                			<li>
+				                			        <figure class="norm">
+				                			        	<img src="./pic/staff/pic_01.jpg" alt="" data-hover="./pic/staff/pic_01_.jpg" />
+											<figcaption>
+												<strong>Сергей Оселедько</strong>
+												<span>генеральный директор</span>
+											</figcaption>
+			                				        </figure>
+										<div class="hover">
+											<blockquote class="txt">
+												<p>На мой взгляд, у нас отличная команда, которая может справиться с задачами любой сложности, что подтверждают рейтинги, призы и награды (а главное — признание коллег и благодарность клиентов).</p>
+											</blockquote>
+										</div><!-- /.hover -->
+			                				</li><li>
+			                				        <figure class="norm">
+				                			        	<img src="./pic/staff/pic_02.jpg" alt="" data-hover="./pic/staff/pic_02_.jpg" />
+											<figcaption>
+												<strong>Максим Павлов</strong>
+												<span>арт-директор, партнер</span>
+											</figcaption>
+			                				        </figure>
+										<div class="hover">
+											<blockquote class="txt">
+												<p>На мой взгляд, у нас отличная команда, которая может справиться с задачами любой сложности, что подтверждают рейтинги, призы и награды (а главное — признание коллег и благодарность клиентов).</p>
+											</blockquote>
+										</div><!-- /.hover -->
+			        	        			</li><li>
+			                				        <figure class="norm">
+			                				        	<img src="./pic/staff/pic_03.jpg" alt="" data-hover="./pic/staff/pic_03_.jpg" />
+											<figcaption>
+												<strong>Адриан Крупчанский</strong>
+												<span>основатель, партнер</span>
+											</figcaption>
+			        	        			        </figure>
+										<div class="hover">
+											<blockquote class="txt">
+												<p>На мой взгляд, у нас отличная команда, которая может справиться с задачами любой сложности, что подтверждают рейтинги, призы и награды (а главное — признание коллег и благодарность клиентов).</p>
+											</blockquote>
+										</div><!-- /.hover -->
+				                			</li><li>
+				                			        <figure class="norm">
+				                			        	<img src="./pic/staff/pic_04.jpg" alt="" data-hover="./pic/staff/pic_04_.jpg" />
+											<figcaption>
+												<strong>Александр Макарчук</strong>
+												<span>исполнительный директор</span>
+											</figcaption>
+			                				        </figure>
+										<div class="hover">
+											<blockquote class="txt">
+												<p>На мой взгляд, у нас отличная команда, которая может справиться с задачами любой сложности, что подтверждают рейтинги, призы и награды (а главное — признание коллег и благодарность клиентов).</p>
+											</blockquote>
+										</div><!-- /.hover -->
+			                				</li>
+				                		</ul>
+				                	</li><!-- /.staffslide --><li class="staffslide ss2">
+				                		<ul data-hoverlayerclass="hovstaffslide2">
+				                			<li>
+				                			        <figure class="norm">
+				                			        	<img src="./pic/staff/pic_05.jpg" alt="" data-hover="./pic/staff/pic_05_.jpg" />
+											<figcaption>
+												<strong>Сергей Оселедько</strong>
+												<span>генеральный директор</span>
+											</figcaption>
+			                				        </figure>
+										<div class="hover">
+											<blockquote class="txt">
+												<p>На мой взгляд, у нас отличная команда, которая может справиться с задачами любой сложности, что подтверждают рейтинги, призы и награды (а главное — признание коллег и благодарность клиентов).</p>
+											</blockquote>
+										</div><!-- /.hover -->
+			        	        			</li><li>
+			                				        <figure class="norm">
+			                				        	<img src="./pic/staff/pic_05.jpg" alt="" data-hover="./pic/staff/pic_05_.jpg" />
+											<figcaption>
+												<strong>Максим Павлов</strong>
+												<span>арт-директор, партнер</span>
+											</figcaption>
+				                			        </figure>
+										<div class="hover">
+											<blockquote class="txt">
+												<p>На мой взгляд, у нас отличная команда, которая может справиться с задачами любой сложности, что подтверждают рейтинги, призы и награды (а главное — признание коллег и благодарность клиентов).</p>
+											</blockquote>
+										</div><!-- /.hover -->
+			                				</li><li>
+			                				        <figure class="norm">
+				                			        	<img src="./pic/staff/pic_05.jpg" alt="" data-hover="./pic/staff/pic_05_.jpg" />
+											<figcaption>
+												<strong>Адриан Крупчанский</strong>
+												<span>основатель, партнер</span>
+											</figcaption>
+			                			        	</figure>
+										<div class="hover">
+											<blockquote class="txt">
+												<p>На мой взгляд, у нас отличная команда, которая может справиться с задачами любой сложности, что подтверждают рейтинги, призы и награды (а главное — признание коллег и благодарность клиентов).</p>
+											</blockquote>
+										</div><!-- /.hover -->
+				                			</li><li>
+				                			        <figure class="norm">
+				                			        	<img src="./pic/staff/pic_05.jpg" alt="" data-hover="./pic/staff/pic_05_.jpg" />
+											<figcaption>
+												<strong>Александр Макарчук</strong>
+												<span>исполнительный директор</span>
+											</figcaption>
+				                			        </figure>
+										<div class="hover">
+											<blockquote class="txt">
+												<p>На мой взгляд, у нас отличная команда, которая может справиться с задачами любой сложности, что подтверждают рейтинги, призы и награды (а главное — признание коллег и благодарность клиентов).</p>
+											</blockquote>
+										</div><!-- /.hover -->
+			                				</li><li>
+			                				        <figure class="norm">
+				                			        	<img src="./pic/staff/pic_05.jpg" alt="" data-hover="./pic/staff/pic_05_.jpg" />
+											<figcaption>
+												<strong>Александр Макарчук</strong>
+												<span>исполнительный директор</span>
+											</figcaption>
+			                				        </figure>
+										<div class="hover">
+											<blockquote class="txt">
+												<p>На мой взгляд, у нас отличная команда, которая может справиться с задачами любой сложности, что подтверждают рейтинги, призы и награды (а главное — признание коллег и благодарность клиентов).</p>
+											</blockquote>
+										</div><!-- /.hover -->
+				                			</li>
+					                	</ul>
+			
+			                			</li><!-- /.staffslide -->
+				                	</ul>
+				                </div><!-- /.staffwrapper -->
+				                </div><!-- /.staffcontainer -->
+			                </div><!-- /.rowbottom -->
+
+
+				</div><!-- /.slidecont -->
+                                </div><!-- /.sslide -->
+
+
+
+<!-- НАГРАДЫ -->
+                                <div class="sslide about-awards" id="about-awards">
+
+					<div class="bg"><!-- фон, тут им проще управлять --></div>
+
+				<div class="slidecont">
+					<div class="rowtop">
+						<h1>Места в рейтингах и награды</h1>
+						<div class="descr">
+							<div class="valignw">
+
+								Некоммерческие проекты — это наше полезное хобби. Оно не позволяет нам останавливаться и дает возможность развиваться.
+						
+								<div class="ieonly"><!-- ieonly --></div>
+							</div><!-- /.valignw -->
+						</div><!-- /.descr -->
+			        	</div><!-- /.rowtop -->
+
+					<div class="rowbottom">
+				                <div class="awardscontainer">
+				                <div class="awardswrapper">
+				                	<ul>
+				                	<li class="awardsslide ss1">
+								<ul>
+									<li>
+										<div>
+										<span class="valignw">
+											<img src="./pic/awards/pic_01.png" alt="" />
+											<span class="ieonly"><!-- ieonly --></span>
+										</span><!-- /.valignw -->
+										</div>
+										<div>
+										<span class="valignw">
+										<span class="title">
+											Top-100 ведущих<br />веб-студий
+											<span class="ieonly"><!-- ieonly --></span>
+										</span><!-- /.title -->
+										</span><!-- /.valignw -->
+										</div>
+										<span class="n">7</span>
+									</li>
+									<li>
+										<div>
+										<span class="valignw">
+											<img src="./pic/awards/pic_02.png" alt="" />
+											<span class="ieonly"><!-- ieonly --></span>
+										</span><!-- /.valignw -->
+										</div>
+										<div>
+										<span class="valignw">
+										<span class="title">
+											Рейтинг<br />Рунета
+											<span class="ieonly"><!-- ieonly --></span>
+										</span><!-- /.title -->
+										</span><!-- /.valignw -->
+										</div>
+										<span class="n">11</span>
+									</li>
+									<li>
+										<div>
+										<span class="valignw">
+											<img src="./pic/awards/pic_03.png" alt="" />
+											<span class="ieonly"><!-- ieonly --></span>
+										</span><!-- /.valignw -->
+										</div>
+										<div>
+										<span class="valignw">
+										<span class="title">
+											Единый Рейтинг<br />веб-студий
+											<span class="ieonly"><!-- ieonly --></span>
+										</span><!-- /.title -->
+										</span><!-- /.valignw -->
+										</div>
+										<span class="n">10</span>
+									</li>
+								</ul>
+				                	</li><!-- /.awardsslide --><li class="awardsslide ss2">
+								<div class="awcircleplace">
+									<div class="awabs"><div class="awardscircle"><div class="img"></div></div></div>
+								</div>
+								<div class="awcounter">
+									<span class="awtitle">Более</span><span class="awcount">50</span><span class="awtitle">наград</span>
+									<span class="awdescr">на российских и международных конкурсах и фестивалях</span>
+								</div>
+								<ul>
+                                                                	<li class="aw1">
+                                                                		<img src="./i/awards/pic_01.png" alt="" />
+                                                                	</li><li class="aw2">
+                                                                		<img src="./i/awards/pic_02.png" alt="" />
+                                                                	</li><li class="aw3">
+                                                                		<img src="./i/awards/pic_03.png" alt="" />
+                                                                	</li><li class="aw4">
+                                                                		<img src="./i/awards/pic_04.png" alt="" />
+                                                                	</li><li class="aw5">
+                                                                		<img src="./i/awards/pic_05.png" alt="" />
+                                                                	</li><li class="aw6">
+                                                                		<img src="./i/awards/pic_06.png" alt="" />
+                                                                	</li>
+                                                                </ul>
+			                		</li><!-- /.awardsslide -->
+				                	</ul>
+				                </div><!-- /.awardswrapper -->
+				                </div><!-- /.awardscontainer -->
+					</div><!-- /.rowbottom -->
+
+
+				</div><!-- /.slidecont -->
+                                </div><!-- /.sslide -->
+
+
+<!-- КОМИССИИ -->
+                                <div class="sslide about-expert" id="about-expert">
+
+					<div class="bg"><!-- фон, тут им проще управлять --></div>
+
+				<div class="slidecont">
+					<div class="rowtop">
+						<h1>Комисссии и ассоциации</h1>
+						<div class="descr">
+							<div class="valignw">
+							
+								Мы являемся членами ключевых ассоциаций в сфере электронных коммуникаций, в составе которых работаем над развитием области IT, созданием инструментов взаимодействия между участниками рынка, обмениваемся опытом.
+								
+								<div class="ieonly"><!-- ieonly --></div>
+							</div><!-- /.valignw -->
+						</div><!-- /.descr -->
+			        	</div><!-- /.rowtop -->
+			
+					<div class="rowbottom">
+						<ul class="expertlist">
+							<li>
+								<div class="rel">
+								<span class="exptext">
+									<span class="valignw">
+										<h3>Член комиссии по Интернет-СМИ</h3>
+										<p>Комиссии при НП «РАЭК» — это система постоянно действующих площадок экспертно-аналитической и практической</p>
+										<span class="ieonly"><!-- ieonly --></span>
+									</span><!-- /.valignw -->
+								</span>
+								<span class="explogo">
+									<span class="valignw">
+										<img src="./pic/expert/pic_01.png" alt="" />
+										<span class="ieonly"><!-- ieonly --></span>
+									</span><!-- /.valignw -->
+								</span>
+								</div>
+							</li><li>
+								<div class="rel">
+								<span class="exptext">
+									<span class="valignw">
+										<h3>Член комиссии по Интернет-СМИ</h3>
+										<p>Комиссии при НП «РАЭК» — это система постоянно действующих площадок экспертно-аналитической и практической</p>
+										<span class="ieonly"><!-- ieonly --></span>
+									</span><!-- /.valignw -->
+								</span>
+								<span class="explogo">
+									<span class="valignw">
+										<img src="./pic/expert/pic_02.png" alt="" />
+										<span class="ieonly"><!-- ieonly --></span>
+									</span><!-- /.valignw -->
+								</span>
+								</div>
+							</li><li>
+								<div class="rel">
+								<span class="exptext">
+									<span class="valignw">
+										<h3>Член комиссии по Интернет-СМИ</h3>
+										<p>Комиссии при НП «РАЭК» — это система постоянно действующих площадок экспертно-аналитической и практической</p>
+										<span class="ieonly"><!-- ieonly --></span>
+									</span><!-- /.valignw -->
+								</span>
+								<span class="explogo">
+									<span class="valignw">
+										<img src="./pic/expert/pic_03.png" alt="" />
+										<span class="ieonly"><!-- ieonly --></span>
+									</span><!-- /.valignw -->
+								</span>
+								</div>
+							</li><li>
+								<div class="rel">
+								<span class="exptext">
+									<span class="valignw">
+										<h3>Член комиссии по Интернет-СМИ</h3>
+										<p>Комиссии при НП «РАЭК» — это система постоянно действующих площадок экспертно-аналитической и практической</p>
+										<span class="ieonly"><!-- ieonly --></span>
+									</span><!-- /.valignw -->
+								</span>
+								<span class="explogo">
+									<span class="valignw">
+										<img src="./pic/expert/pic_04.png" alt="" />
+										<span class="ieonly"><!-- ieonly --></span>
+									</span><!-- /.valignw -->
+								</span>
+								</div>
+							</li>
+						</ul>
+					</div><!-- /.rowbottom -->
+
+
+				</div><!-- /.slidecont -->
+                                </div><!-- /.sslide -->
+
+
+			</div><!-- /.subscreen -->
+		</section><!-- /.screen .maincompany -->
+
+
+	</div> <!-- /.main -->
+
+	<div class="footer">
+		<footer>
+			<div class="copy">© 2004-2013 Notamedia</div><!-- /.copy -->
+			<div class="phone">+7 (495) 995-15-21</div><!-- /.phone -->
+			<div class="email"><a href="mailto:info@notamedia.ru">info@notamedia.ru</a></div><!-- /.email -->
+		</footer>
+		<div class="present"><div><a href="#">cкачать презентацию компании<span>2.3 MB</span></a></div></div><!-- /.present -->
+	</div><!-- /.footer -->
+</body>
+</html>
